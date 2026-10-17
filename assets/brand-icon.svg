@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128" role="img" aria-label="MJC Designs AI icon">
+  <defs>
+    <linearGradient id="tile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7658cf"/>
+      <stop offset="1" stop-color="#4b328f"/>
+    </linearGradient>
+  </defs>
+  <rect x="3" y="3" width="122" height="122" rx="28" fill="url(#tile)"/>
+  <g fill="#fff" opacity=".97">
+    <rect x="25" y="43" width="42" height="12" rx="4"/>
+    <rect x="71" y="43" width="22" height="12" rx="4"/>
+    <rect x="25" y="61" width="22" height="12" rx="4"/>
+    <rect x="51" y="61" width="42" height="12" rx="4"/>
+    <rect x="25" y="79" width="42" height="12" rx="4"/>
+    <rect x="71" y="79" width="22" height="12" rx="4"/>
+  </g>
+  <path d="m98 18 3.2 8.8L110 30l-8.8 3.2L98 42l-3.2-8.8L86 30l8.8-3.2z" fill="#e2d9ff"/>
+</svg>

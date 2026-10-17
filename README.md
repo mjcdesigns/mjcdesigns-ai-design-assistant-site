@@ -1,6 +1,6 @@
 # MJC Designs AI Design Assistant for Bricks Builder
 
-An informational website for the free, open-source WordPress plugin. The site is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
+An informational website for the free, open-source WordPress plugin. This edition follows the plugin's v1.1.5 About and Capabilities pages and uses its animated icon. The site is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
 
 ## Publish with GitHub Pages
 
@@ -12,5 +12,7 @@ An informational website for the free, open-source WordPress plugin. The site is
 ## Update the site
 
 Edit `index.html` and the files in `assets/`, then commit and push the changes to `main`. GitHub Pages will publish the update automatically.
+
+The animated GIF and static SVG in `assets/` come from the v1.1.5 plugin package. The static icon appears for visitors who prefer reduced motion.
 
 The plugin is an independent third-party integration and is not affiliated with or endorsed by Bricks Builder or its developers. AI provider charges may apply.
