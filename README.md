@@ -1,6 +1,6 @@
 # MJC Designs AI Design Assistant for Bricks Builder
 
-An informational website for the free, open-source WordPress plugin. This edition follows the plugin's v1.1.5 About and Capabilities pages and uses its animated icon. The site is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
+An informational website for the free, open-source WordPress plugin. This edition follows the plugin's v1.1.5 About and Capabilities pages, uses its dark theme and animated icon, and links to the [MJC Designs AI Design Assistant tutorials](https://www.youtube.com/@MJCDesignsAIDesignAssistant). The site is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
 
 ## Publish with GitHub Pages
 
