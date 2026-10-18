@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17151c">
-  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder helps you create, refine, and remove page elements through a review-first workflow.">
+  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder offers reviewed Bricks page edits and a separate HTML &amp; CSS workspace for design drafts.">
   <title>MJC Designs AI Design Assistant for Bricks Builder</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand-icon.svg">
   <link rel="stylesheet" href="assets/styles.css">
@@ -20,7 +20,7 @@
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#quick-start">Quick start</a><a href="#capabilities">Capabilities</a><a href="#tutorials">Tutorials</a><a href="#faq">FAQ</a>
+        <a href="#about">About</a><a href="#workspaces">Workspaces</a><a href="#quick-start">Quick start</a><a href="#tutorials">Tutorials</a><a href="#faq">FAQ</a>
         <a class="nav-button" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the plugin <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -31,9 +31,9 @@
       <div class="hero-copy">
         <p class="eyebrow">MJC DESIGNS · AI DESIGN ASSISTANT</p>
         <h1>Design with<br><em>a little help.</em></h1>
-        <p class="hero-intro">Turn a plain-language idea into native Bricks changes, review the result, and decide when it is ready to apply.</p>
+        <p class="hero-intro">Describe a design, then choose your path: review native Bricks page changes before applying them, or explore an HTML &amp; CSS draft you can refine and copy into Bricks yourself.</p>
         <div class="hero-actions"><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the free plugin <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#quick-start">See how it works <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-meta"><span class="version-pill">VERSION 1.1.5 · ALPHA</span><span>Free &amp; open source</span></div>
+        <div class="hero-meta"><span class="version-pill">VERSION 1.1.6 · ALPHA</span><span>Free &amp; open source</span></div>
       </div>
       <div class="hero-icon" aria-hidden="true"><div class="hero-halo"></div><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="260" height="260"></picture><span>✦</span></div>
     </section>
@@ -43,24 +43,46 @@
     <section class="wrap overview-grid" id="about" aria-label="About the assistant">
       <article class="card about-card">
         <div class="card-head"><span class="card-icon" aria-hidden="true">✦</span><div><p class="kicker">ABOUT THE ASSISTANT</p><h2>Made for thoughtful Bricks workflows.</h2></div></div>
-        <p>MJC Designs AI helps you create, refine, and remove page elements through a review-first workflow. It uses the WordPress AI Client with provider models configured through <strong>Settings → Connectors</strong>.</p>
+        <p>MJC Designs AI helps you create, refine, and remove Bricks page elements through a review-first workflow. Its separate HTML &amp; CSS Workspace lets you draft a layout without changing a page. Both use the WordPress AI Client with provider models configured through <strong>Settings → Connectors</strong>.</p>
         <div class="facts"><div><small>CREATED BY</small><strong>MJC Designs</strong></div><div><small>AI MODEL</small><strong>Selected provider model</strong></div><div><small>WORKS WITH</small><strong>Bricks Builder</strong></div></div>
       </article>
-      <article class="card about-side"><p class="kicker">THE IDEA</p><h2>You guide the design.<br><span>AI helps shape it.</span></h2><p>Describe what you want, inspect the proposed page in a temporary frontend preview, and apply the edits you approve.</p><div class="flow"><span>Describe</span><b>→</b><span>Preview</span><b>→</b><span>Apply</span></div></article>
+      <article class="card about-side"><p class="kicker">THE IDEA</p><h2>You guide the design.<br><span>AI helps shape it.</span></h2><p>Work on a selected Bricks page or sketch an independent HTML and CSS concept. Preview the result, then decide what belongs on your site.</p><div class="flow"><span>Describe</span><b>→</b><span>Preview</span><b>→</b><span>Choose</span></div></article>
+    </section>
+
+    <section class="wrap section-block" id="workspaces">
+      <div class="section-title"><div><p class="kicker">TWO WAYS TO DESIGN</p><h2>Choose your workspace.</h2><p>Pick the workflow that fits the job you want to do.</p></div><span>01 / 05</span></div>
+      <div class="workspace-grid">
+        <article class="card workspace-card">
+          <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">▣</span><span class="workspace-tag">EDIT A BRICKS PAGE</span></div>
+          <h3>Main workspace</h3>
+          <p>Select a page or Bricks template. The assistant reads its elements and live registered controls, proposes native changes, and checks them before you preview or apply.</p>
+          <ul><li>Add, edit, move, or remove supported elements</li><li>Inspect a temporary frontend preview at your site's Bricks breakpoints</li><li>Apply reviewed changes, with one-step Undo and Redo</li></ul>
+          <a href="#quick-start">See the page workflow <span aria-hidden="true">↓</span></a>
+        </article>
+        <article class="card workspace-card workspace-card-new">
+          <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">&lt;/&gt;</span><span class="workspace-tag">NEW IN 1.1.6</span></div>
+          <h3>HTML &amp; CSS Workspace</h3>
+          <p>Explore a standalone design draft in a separate workspace. Choose a model and class prefix, describe a layout, and optionally add a reference image.</p>
+          <ul><li>Refine drafts in up to five chats kept in this browser tab</li><li>Review an isolated, responsive preview and tabbed HTML/CSS code</li><li>Copy the result into Bricks manually after reviewing it</li></ul>
+          <p class="workspace-note">This workspace does not read or save the selected Bricks page.</p>
+        </article>
+      </div>
+      <div class="release-note"><strong>Also improved in 1.1.6</strong><span>More reliable design generation and clearer feedback, plus adjustable panels, fullscreen viewing, and optional code line wrapping in the HTML &amp; CSS Workspace.</span></div>
     </section>
 
     <section class="wrap section-block" id="quick-start">
-      <div class="section-title"><div><p class="kicker">GETTING STARTED</p><h2>Quick start</h2><p>From provider setup to a reviewed change in five steps.</p></div><span>01 / 04</span></div>
+      <div class="section-title"><div><p class="kicker">GETTING STARTED</p><h2>Quick start</h2><p>Use the main workspace to take a page from request to reviewed change in five steps.</p></div><span>02 / 05</span></div>
       <div class="card steps-card">
         <ol class="steps">
           <li><div><h3>Connect your AI provider</h3><p>A site administrator configures a compatible provider under <strong>WordPress Settings → Connectors</strong>. Choose an available model in the assistant.</p></div></li>
           <li><div><h3>Enable Bricks abilities</h3><p>Under <strong>Bricks → AI → Abilities</strong>, enable <code>get-page-elements</code>, <code>set-page-elements</code>, and <code>get-element-schema</code>.</p></div></li>
           <li><div><h3>Select a page or template</h3><p>Choose an editable WordPress page or Bricks template. Pages without Bricks elements can be selected too.</p></div></li>
           <li><div><h3>Describe the change</h3><p>Optionally attach a JPG, PNG, or WebP reference image up to 5 MB, or choose up to five existing Media Library images for placement.</p></div></li>
-          <li><div><h3>Review, then apply</h3><p>Check the frontend preview and proposed edits. Apply when ready; use Undo to reverse the last assistant change.</p></div></li>
+          <li><div><h3>Review, then apply</h3><p>Check the frontend preview and proposed edits across desktop, tablet, and mobile. Apply when ready; use Undo or Redo for the last assistant change.</p></div></li>
         </ol>
         <aside class="requirements"><h3>Requirements</h3><div><strong>WordPress</strong><span>7.0 or later, with AI Client</span></div><div><strong>Bricks Builder</strong><span>2.4 or later</span></div><div><strong>PHP</strong><span>7.4 or later</span></div><div><strong>AI provider</strong><span>Compatible integration configured</span></div><a href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View installation details <span aria-hidden="true">↗</span></a></aside>
       </div>
+      <p class="alternate-start"><strong>Trying a fresh concept?</strong> Open the HTML &amp; CSS Workspace, choose a model and class prefix, describe your layout, then refine, preview, and copy the draft into Bricks manually.</p>
     </section>
 
     <section class="wrap tutorials" id="tutorials" aria-labelledby="tutorials-title">
@@ -70,38 +92,40 @@
     </section>
 
     <section class="wrap section-block" id="capabilities">
-      <div class="section-title"><div><p class="kicker">BUILDER TOOLKIT</p><h2>What it can change</h2><p>The assistant checks registered Bricks controls before proposing changes.</p></div><span>02 / 04</span></div>
+      <div class="section-title"><div><p class="kicker">BUILDER TOOLKIT</p><h2>What the main workspace can change</h2><p>Each proposal uses the selected page and registered Bricks controls to guide and validate edits.</p></div><span>03 / 05</span></div>
       <div class="capability-grid">
         <article class="card capability"><span class="card-icon" aria-hidden="true">▣</span><h3>Edit native elements</h3><p>Change supported text, layout, and style settings, including breakpoint values where controls allow them.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">＋</span><h3>Add, move, and remove</h3><p>Add registered elements and supported nested children, move elements, or remove elements and their descendants.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">▤</span><h3>Start an empty page</h3><p>Begin a page without existing Bricks elements using a section or container.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">▧</span><h3>Place selected images</h3><p>Choose up to five Media Library images and propose their placement in native Bricks image controls.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">◫</span><h3>Review across widths</h3><p>Use the temporary frontend preview and your site's configured Bricks breakpoints to inspect the result.</p></article>
-        <article class="card capability"><span class="card-icon" aria-hidden="true">↶</span><h3>Apply and undo</h3><p>Save a reviewed proposal, then undo the most recent assistant change if needed.</p></article>
+        <article class="card capability"><span class="card-icon" aria-hidden="true">↶</span><h3>Apply, undo, redo</h3><p>Save a reviewed proposal, undo the most recent assistant change, or redo that undone change.</p></article>
       </div>
-      <div class="limitations"><div><p class="kicker">CURRENT BOUNDARIES</p><h3>Focused on page elements</h3></div><p>This release does not create or edit WordPress post records, manage global classes or variables, theme styles, components, WooCommerce setup, or template conditions. Proposals cannot write code controls or Custom CSS.</p></div>
+      <div class="limitations"><div><p class="kicker">CURRENT BOUNDARIES</p><h3>Two distinct workflows</h3></div><p>The main workspace does not create WordPress posts, manage global classes or variables, theme styles, components, WooCommerce setup, or template conditions. Its proposals cannot write code controls or Custom CSS. The HTML &amp; CSS Workspace creates drafts for manual copying and does not apply them to a page.</p></div>
     </section>
 
     <section class="wrap section-block" id="review">
-      <div class="section-title"><div><p class="kicker">REVIEW &amp; DATA</p><h2>Know what happens before you apply.</h2><p>The plugin makes its workflow and provider data sharing clear.</p></div><span>03 / 04</span></div>
+      <div class="section-title"><div><p class="kicker">REVIEW &amp; DATA</p><h2>Know what happens before you apply.</h2><p>The plugin makes its workflows and provider data sharing clear.</p></div><span>04 / 05</span></div>
       <div class="review-grid">
-        <article class="card"><span class="card-icon" aria-hidden="true">◇</span><h3>A temporary preview</h3><p>Suggestions are checked against the live Bricks control schema and shown in a temporary frontend preview. Changes are saved only after you choose <strong>Apply changes to page</strong>.</p></article>
-        <article class="card"><span class="card-icon" aria-hidden="true">⌁</span><h3>Your selected provider</h3><p>Your prompt, selected page content, optional reference image, and metadata for explicitly selected Media Library images are sent to the selected provider. The Media Library image files are not sent by this feature.</p></article>
-        <article class="card"><span class="card-icon" aria-hidden="true">▢</span><h3>Your site, your backup</h3><p>Reference uploads are not saved in the Media Library. Provider prices, quotas, and data handling vary. Keep a backup before applying generated changes, especially on a live page.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">◇</span><h3>Preview before saving</h3><p>Main-workspace suggestions are checked against live Bricks controls and shown in a private temporary frontend preview. Page changes are saved only after you choose <strong>Apply changes to page</strong>.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">⌁</span><h3>Your selected provider</h3><p>The main workspace sends your prompt, selected page content, optional reference image, and metadata for explicitly selected Media Library images. The HTML &amp; CSS Workspace sends your prompt and optional image; refinements include the current draft.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">▢</span><h3>Private drafts, careful review</h3><p>HTML and CSS chats stay in this browser tab's session storage, not in WordPress. Reference uploads are not saved in the Media Library. Provider costs and data handling vary; keep a backup before applying page changes.</p></article>
       </div>
     </section>
 
     <section class="wrap section-block faq-block" id="faq">
-      <div class="section-title"><div><p class="kicker">HELP CENTER</p><h2>Frequently asked questions</h2></div><span>04 / 04</span></div>
+      <div class="section-title"><div><p class="kicker">HELP CENTER</p><h2>Frequently asked questions</h2></div><span>05 / 05</span></div>
       <div class="faq-list">
         <details class="card"><summary>Does the assistant edit blog posts?</summary><p>No. It edits WordPress pages and Bricks templates. It can configure supported Query Loops to display existing posts, but it does not edit blog post content or create post records.</p></details>
         <details class="card"><summary>Can I use images from my Media Library?</summary><p>Yes. Choose up to five existing site images, then describe where you want them placed. Image metadata goes to the selected provider; this feature does not send the selected image files for visual analysis.</p></details>
+        <details class="card"><summary>Does the HTML &amp; CSS Workspace change my page?</summary><p>No. It generates and refines a draft independently of the selected page. Preview it in the isolated browser frame, then copy the HTML and CSS into Bricks yourself. Review the resulting classes, styles, and images in Bricks before saving.</p></details>
+        <details class="card"><summary>Where are HTML and CSS chats kept?</summary><p>Up to five chats stay in the current browser tab's session storage until the tab or chat is closed. The plugin does not save those chats to WordPress.</p></details>
         <details class="card"><summary>Does using an AI provider cost money?</summary><p>It depends on your selected provider and model. Some offer free usage tiers, while others charge. Review the provider's current terms, prices, quotas, and data-handling policies before use.</p></details>
-        <details class="card"><summary>Are previews permanent?</summary><p>No. The assistant creates private temporary draft previews. It removes them when you leave the workspace, replace a preview for the same document, or when the one-hour expiration fallback runs.</p></details>
+        <details class="card"><summary>Are previews permanent?</summary><p>No. Main-workspace previews are private temporary drafts removed when you leave or replace them, with a one-hour expiration fallback. HTML and CSS drafts appear in an isolated browser frame without creating preview posts.</p></details>
       </div>
     </section>
 
-    <section class="wrap closing"><div><p class="kicker">READY TO EXPLORE?</p><h2>Design with a little help.</h2><p>Get the free, open-source plugin and bring a review-first workflow to your Bricks pages.</p></div><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View on WordPress.org <span aria-hidden="true">↗</span></a></section>
+    <section class="wrap closing"><div><p class="kicker">READY TO EXPLORE?</p><h2>Design with a little help.</h2><p>Get the free, open-source plugin to review Bricks page edits or explore a standalone HTML and CSS draft.</p></div><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View on WordPress.org <span aria-hidden="true">↗</span></a></section>
   </main>
 
   <footer class="site-footer"><div class="wrap footer-inner"><div><a class="footer-brand" href="#top"><img src="assets/brand-icon.svg" alt="" width="32" height="32"><strong>MJC Designs AI</strong></a><p>Made for thoughtful Bricks workflows.</p></div><div class="footer-links"><a href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">WordPress.org <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@MJCDesignsAIDesignAssistant" target="_blank" rel="noopener noreferrer">YouTube tutorials <span aria-hidden="true">↗</span></a><a href="https://github.com/mjcdesigns/mjcdesigns-ai-design-assistant-site" target="_blank" rel="noopener noreferrer">Website source <span aria-hidden="true">↗</span></a></div></div><div class="wrap footer-bottom"><small>MJC Designs AI Design Assistant for Bricks Builder is an independent third-party integration. It is not affiliated with or endorsed by Bricks Builder or its developers.</small><small>© <span id="year">2026</span> MJC Designs</small></div></footer>
