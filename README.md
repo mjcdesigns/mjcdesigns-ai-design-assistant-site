@@ -1,6 +1,6 @@
 # MJC Designs AI Design Assistant for Bricks Builder
 
-An informational website for the free, open-source WordPress plugin. This edition reflects the v1.1.6 plugin package, including its separate HTML & CSS Workspace, while keeping the plugin-inspired dark theme and animated icon. It also links to the [MJC Designs AI Design Assistant tutorials](https://www.youtube.com/@MJCDesignsAIDesignAssistant). The site is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
+An informational website for the free, open-source WordPress plugin. This edition previews the v1.1.7 plugin package, including the Content to Pages Workspace, page-to-page design references, and browser alerts. WordPress.org still lists v1.1.6 as the current release at the time of this site update. The site keeps the plugin-inspired dark theme and animated icon and links to the [MJC Designs AI Design Assistant tutorials](https://www.youtube.com/@MJCDesignsAIDesignAssistant). It is plain HTML, CSS, and JavaScript, so GitHub Pages can serve it directly without a build step.
 
 ## Publish with GitHub Pages
 
@@ -13,6 +13,8 @@ An informational website for the free, open-source WordPress plugin. This editio
 
 Upload `index.html`, `README.md`, and the `assets/` folder to the repository root on the `main` branch, replacing the earlier versions. Keep `LICENSE` in the repository. GitHub Pages will publish the update automatically after the commit.
 
-The animated GIF in `assets/` matches the v1.1.6 plugin package. The static SVG icon appears for visitors who prefer reduced motion.
+The animated GIF in `assets/` matches the v1.1.7 plugin package. The static SVG icon appears for visitors who prefer reduced motion.
+
+After v1.1.7 is published on WordPress.org, update the preview badge and notice near the top of `index.html` to reflect the live release.
 
 The plugin is an independent third-party integration and is not affiliated with or endorsed by Bricks Builder or its developers. AI provider charges may apply.
