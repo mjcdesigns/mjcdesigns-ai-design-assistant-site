@@ -124,6 +124,47 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .tutorials-icon { flex:0 0 52px; width:52px; height:52px; display:grid; place-items:center; padding-left:3px; border-radius:14px; background:#5f41b0; color:white; font-size:20px; }
 .tutorials h2 { margin:0; font-size:21px; letter-spacing:-.03em; }
 .tutorials p:not(.kicker) { margin:5px 0 0; max-width:570px; color:#c9c1d3; font-size:12px; }
+
+.screenshots-section { padding-top:72px; }
+.screenshot-group { margin-top:30px; }
+.screenshot-group + .screenshot-group { margin-top:48px; }
+.screenshot-group-head { display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:14px; }
+.screenshot-group-head h3 { margin:0; font-size:20px; letter-spacing:-.025em; }
+.screenshot-group-head p { margin:3px 0 0; color:var(--muted); font-size:12px; }
+.screenshot-controls { display:flex; align-items:center; gap:8px; }
+.screenshot-position { min-width:48px; margin-right:5px; color:#c9baff; text-align:right; font-size:12px; font-weight:700; }
+.screenshot-controls button,.dialog-arrow,.dialog-close { display:grid; place-items:center; width:38px; height:38px; padding:0; border:1px solid #57466f; border-radius:9px; background:#282036; color:white; cursor:pointer; font-size:27px; line-height:1; }
+.screenshot-controls button:hover:not(:disabled),.dialog-arrow:hover,.dialog-close:hover { background:#5f41b0; }
+.screenshot-controls button:disabled { opacity:.35; cursor:default; }
+.screenshot-track { display:flex; gap:16px; overflow-x:auto; scroll-snap-type:x mandatory; scroll-padding-inline:1px; padding:2px 2px 14px; scrollbar-color:#6d5790 #25212c; }
+.screenshot-card { flex:0 0 min(760px,calc(100% - 72px)); min-width:0; margin:0; overflow:hidden; scroll-snap-align:start; }
+.screenshot-open { display:block; width:100%; padding:0; border:0; background:#0e0c12; cursor:zoom-in; }
+.screenshot-open img { display:block; width:100%; height:auto; aspect-ratio:16 / 9; object-fit:contain; }
+.screenshot-card figcaption { display:flex; align-items:center; gap:13px; min-height:52px; padding:10px 16px; }
+.screenshot-card figcaption span { flex:0 0 auto; color:#c9baff; font-size:10px; font-weight:800; letter-spacing:.07em; }
+.screenshot-card figcaption strong { font-size:12px; font-weight:650; }
+.screenshot-open:hover img { opacity:.86; }
+.screenshot-open:focus-visible,.video-play:focus-visible,.screenshot-controls button:focus-visible,.dialog-arrow:focus-visible,.dialog-close:focus-visible { outline:3px solid #d7c4ff; outline-offset:2px; }
+.screenshot-dialog { position:fixed; inset:0; width:min(96vw,1800px); max-width:none; max-height:96vh; margin:auto; padding:14px; border:1px solid #675088; border-radius:15px; background:#17131e; color:white; box-shadow:0 20px 80px #000a; }
+.screenshot-dialog::backdrop { background:#050408e8; }
+.dialog-top { display:flex; align-items:center; justify-content:space-between; gap:15px; padding:0 1px 12px; }
+.dialog-count { color:#c9baff; font-size:12px; font-weight:750; letter-spacing:.05em; }
+.dialog-image-wrap { position:relative; display:grid; place-items:center; min-height:100px; background:#0c0b0f; border-radius:9px; }
+.dialog-image { display:block; max-width:100%; max-height:calc(96vh - 132px); object-fit:contain; }
+.dialog-arrow { position:absolute; z-index:1; top:50%; transform:translateY(-50%); background:#20192dcc; }
+.dialog-prev { left:10px; }
+.dialog-next { right:10px; }
+.dialog-caption { margin:10px 4px 0; color:#e6e0ee; text-align:center; font-size:13px; font-weight:650; }
+.video-section { margin-top:16px; }
+.video-row { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; }
+.video-card { overflow:hidden; }
+.video-play { position:relative; display:block; width:100%; aspect-ratio:16 / 9; padding:0; border:0; background:#0d0b12; cursor:pointer; }
+.video-play img,.video-play iframe { display:block; width:100%; height:100%; object-fit:cover; border:0; }
+.video-frame { display:block; width:100%; aspect-ratio:16 / 9; border:0; }
+.video-play-icon { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:grid; place-items:center; width:54px; height:38px; padding-left:3px; border-radius:10px; background:#5f41b0ed; color:white; font-size:18px; }
+.video-play:hover .video-play-icon { background:#8463d9; }
+.video-card h3 { margin:13px 14px 0; font-size:13px; line-height:1.35; }
+.video-card p { margin:3px 14px 15px; color:var(--muted); font-size:11px; }
 .tutorial-button { margin-left:auto; white-space:nowrap; background:#c9baff; color:#231a35; }
 .capability-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; }
 .capability { padding:22px; min-height:215px; }
@@ -164,6 +205,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 @media (max-width:1050px) {
   .workspace-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .workspace-card-new { grid-column:1 / -1; }
+  .video-row { grid-template-columns:repeat(2,minmax(0,1fr)); }
 }
 @media (max-width:900px) {
   .header-inner { width:min(1100px,calc(100% - 32px)); }
@@ -221,6 +263,15 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
   .tutorials > div:nth-child(2) { flex:1 1 calc(100% - 60px); }
   .tutorials h2 { font-size:18px; }
   .tutorial-button { margin-left:0; }
+  .screenshot-group-head h3 { font-size:17px; }
+  .screenshot-card { flex-basis:calc(100% - 24px); }
+  .screenshot-card figcaption { padding:9px 11px; gap:8px; }
+  .screenshot-card figcaption strong { font-size:11px; }
+  .screenshot-dialog { width:98vw; padding:8px; }
+  .dialog-image { max-height:calc(96vh - 120px); }
+  .dialog-arrow { width:31px; height:38px; font-size:24px; }
+  .dialog-prev { left:3px; }
+  .dialog-next { right:3px; }
   .capability-grid,.review-grid { grid-template-columns:1fr; }
   .capability { min-height:0; }
   .limitations { grid-template-columns:1fr; gap:7px; }
@@ -232,4 +283,12 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 @media (prefers-reduced-motion:reduce) {
   html { scroll-behavior:auto; }
   .button { transition:none; }
+}
+@media (max-width:520px) {
+  .video-row { grid-template-columns:1fr; }
+  .screenshot-group-head { align-items:start; }
+  .screenshot-group-head p { font-size:10px; }
+  .screenshot-controls { gap:4px; }
+  .screenshot-controls button { width:32px; height:32px; }
+  .screenshot-position { min-width:38px; margin-right:1px; font-size:11px; }
 }
