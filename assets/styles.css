@@ -101,6 +101,10 @@ button { font:inherit; }
 .content-steps li > span { display:inline-grid; place-items:center; width:30px; height:30px; border-radius:9px; background:#2b233b; color:#c9baff; font-size:11px; font-weight:800; }
 .content-steps h3 { margin:15px 0 7px; font-size:14px; }
 .content-steps p { margin:0; color:var(--text); font-size:12px; line-height:1.65; }
+.style-feature-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:14px; }
+.style-feature-grid article { padding:22px; }
+.style-feature-grid h3 { margin:0 0 8px; font-size:15px; }
+.style-feature-grid p { margin:0; color:var(--text); font-size:12px; line-height:1.7; }
 .content-note { margin-top:14px; padding:16px 20px; border:1px solid #403451; border-radius:11px; background:#211b2d; color:#cbc2d7; font-size:12px; line-height:1.7; }
 .content-note strong { color:#e5d9f7; }
 .steps-card { padding:27px; display:grid; grid-template-columns:1.3fr .7fr; gap:34px; }
@@ -256,7 +260,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
   .content-lead { grid-template-columns:1fr; gap:20px; padding:22px; }
   .content-lead h3 { font-size:21px; }
   .content-lead-aside { padding:16px 0 0; border-left:0; border-top:1px solid #604a82; }
-  .content-steps { grid-template-columns:1fr; }
+  .content-steps,.style-feature-grid { grid-template-columns:1fr; }
   .steps-card { grid-template-columns:1fr; gap:26px; padding:20px; }
   .tutorials { align-items:flex-start; margin-top:42px; padding:22px; gap:15px; }
   .tutorials-icon { width:42px; height:42px; flex-basis:42px; }
