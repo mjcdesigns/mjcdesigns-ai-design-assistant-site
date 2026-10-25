@@ -101,6 +101,8 @@ button { font:inherit; }
 .content-steps li > span { display:inline-grid; place-items:center; width:30px; height:30px; border-radius:9px; background:#2b233b; color:#c9baff; font-size:11px; font-weight:800; }
 .content-steps h3 { margin:15px 0 7px; font-size:14px; }
 .content-steps p { margin:0; color:var(--text); font-size:12px; line-height:1.65; }
+.seo-fields { display:flex; flex-wrap:wrap; gap:7px; margin-top:18px; }
+.seo-fields span { padding:6px 10px; border:1px solid #654d87; border-radius:100px; background:#332744; color:#e4d7fa; font-size:10px; font-weight:700; }
 .style-feature-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; margin-top:14px; }
 .style-feature-grid article { padding:22px; }
 .style-feature-grid h3 { margin:0 0 8px; font-size:15px; }

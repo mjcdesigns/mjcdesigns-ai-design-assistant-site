@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17151c">
-  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.8 adds Style Manager palettes, fluid typography, spacing variables, and Bricks-compatible JSON alongside reviewed page designs.">
+  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.9 adds optional Page SEO editing for selected WordPress pages, with initial Yoast SEO and AIOSEO support alongside reviewed Bricks designs.">
   <title>MJC Designs AI Design Assistant for Bricks Builder</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand-icon.svg">
-  <link rel="stylesheet" href="assets/styles.css?v=1.1.8">
+  <link rel="stylesheet" href="assets/styles.css?v=1.1.9">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
-        <a href="#about">About</a><a href="#workspaces">Workspaces</a><a href="#style-manager">Style Manager</a><a href="#screenshots">Screenshots</a><a href="#quick-start">Quick start</a><a href="#tutorials">Tutorials</a><a href="#faq">FAQ</a>
+        <a href="#about">About</a><a href="#workspaces">Workspaces</a><a href="#page-seo">Page SEO</a><a href="#style-manager">Style Manager</a><a href="#screenshots">Screenshots</a><a href="#tutorials">Tutorials</a><a href="#faq">FAQ</a>
         <a class="nav-button" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the plugin <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
@@ -31,9 +31,9 @@
       <div class="hero-copy">
         <p class="eyebrow">MJC DESIGNS · AI DESIGN ASSISTANT</p>
         <h1>Design with<br><em>a little help.</em></h1>
-        <p class="hero-intro">Shape a Bricks page, explore an HTML &amp; CSS concept, or turn final copy into draft pages. New in 1.1.8: guide designs with a shared Style Manager palette and variables. Review each design before it becomes part of your site.</p>
+        <p class="hero-intro">Shape a Bricks page, explore an HTML &amp; CSS concept, or turn final copy into draft pages. New in 1.1.9: review and save supported Page SEO details on selected WordPress pages.</p>
         <div class="hero-actions"><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the free plugin <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#workspaces">See the workspaces <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-meta"><span class="version-pill">VERSION 1.1.8 · ALPHA</span><span>Free &amp; open source</span></div>
+        <div class="hero-meta"><span class="version-pill">VERSION 1.1.9 · ALPHA</span><span>Free &amp; open source</span></div>
       </div>
       <div class="hero-icon" aria-hidden="true"><div class="hero-halo"></div><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="260" height="260"></picture><span>✦</span></div>
     </section>
@@ -43,14 +43,14 @@
     <section class="wrap overview-grid" id="about" aria-label="About the assistant">
       <article class="card about-card">
         <div class="card-head"><span class="card-icon" aria-hidden="true">✦</span><div><p class="kicker">ABOUT THE ASSISTANT</p><h2>Made for thoughtful Bricks workflows.</h2></div></div>
-        <p>MJC Designs AI helps you review native Bricks page changes, create standalone HTML and CSS concepts, and prepare draft pages from final copy. Optional Style Manager settings can guide designs in the Main and Content to Pages workspaces. It uses the WordPress AI Client with provider models configured through <strong>Settings → Connectors</strong>.</p>
+        <p>MJC Designs AI helps you review native Bricks page changes, create standalone HTML and CSS concepts, and prepare draft pages from final copy. Optional Style Manager settings can guide designs in the Main and Content to Pages workspaces. Page SEO can edit supported metadata for selected WordPress pages. It uses the WordPress AI Client with provider models configured through <strong>Settings → Connectors</strong>.</p>
         <div class="facts"><div><small>CREATED BY</small><strong>MJC Designs</strong></div><div><small>AI MODEL</small><strong>Selected provider model</strong></div><div><small>WORKS WITH</small><strong>Bricks Builder</strong></div></div>
       </article>
       <article class="card about-side"><p class="kicker">THE IDEA</p><h2>You guide the design.<br><span>AI helps shape it.</span></h2><p>Start with a page, a design idea, or prepared copy. Inspect the proposal and preview, then choose what to apply or publish.</p><div class="flow"><span>Prepare</span><b>→</b><span>Preview</span><b>→</b><span>Choose</span></div></article>
     </section>
 
     <section class="wrap section-block" id="workspaces">
-      <div class="section-title"><div><p class="kicker">THREE WAYS TO DESIGN</p><h2>Choose your workspace.</h2><p>Pick the workflow that fits the job you want to do.</p></div><span>01 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">THREE WAYS TO DESIGN</p><h2>Choose your workspace.</h2><p>Pick the workflow that fits the job you want to do.</p></div><span>01 / 08</span></div>
       <div class="workspace-grid">
         <article class="card workspace-card">
           <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">▣</span><span class="workspace-tag">EDIT A BRICKS PAGE</span></div>
@@ -70,15 +70,26 @@
           <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">▤</span><span class="workspace-tag">NEW IN 1.1.7</span></div>
           <h3>Content to Pages</h3>
           <p>Upload final copy, set brand guidance, and create WordPress draft pages. Prepare a separate Bricks design for each page, then review it before applying.</p>
-          <ul><li>Read DOCX or text-based PDF copy files</li><li>Generate drafts while checking for existing page titles</li><li>Refine pages or an existing Bricks template</li></ul>
+          <ul><li>Read DOCX or text-based PDF copy files</li><li>Generate drafts with optional labeled SEO details</li><li>Refine pages or an existing Bricks template</li></ul>
           <a href="#content-to-pages">Explore the workflow <span aria-hidden="true">↓</span></a>
         </article>
       </div>
-      <div class="release-note"><strong>New in 1.1.8</strong><span>Style Manager adds optional shared colors and variables for the Main and Content to Pages workspaces. The plugin About page now links directly to video guides and updates.</span></div>
+      <div class="release-note"><strong>New in 1.1.9</strong><span>Page SEO adds optional editing for supported Yoast SEO and AIOSEO page details. Content to Pages can carry clearly labeled SEO details from uploaded copy into newly created drafts when one supported SEO tool is active.</span></div>
+    </section>
+
+    <section class="wrap section-block" id="page-seo" aria-labelledby="page-seo-title">
+      <div class="section-title"><div><p class="kicker">NEW IN VERSION 1.1.9</p><h2 id="page-seo-title">Give each page its search details.</h2><p>Open Page SEO from the Main or Content to Pages workspace when a WordPress page is selected.</p></div><span>02 / 08</span></div>
+      <div class="content-lead card"><div><span class="workspace-tag">OPTIONAL PAGE SEO EDITOR</span><h3>Review the details, then apply.</h3><p>Preview and edit a page's SEO title, meta description, supported focus keyphrase, and WordPress slug. The editor saves supported fields to the SEO tool you choose only when you apply them.</p><div class="seo-fields" aria-label="Supported Page SEO details"><span>SEO title</span><span>Meta description</span><span>Focus keyphrase</span><span>Page slug</span></div></div><div class="content-lead-aside"><strong>Initial integrations</strong><span>Yoast SEO and AIOSEO are supported where the active installation and your account allow the relevant fields. The slug is saved through WordPress.</span></div></div>
+      <div class="style-feature-grid">
+        <article class="card"><h3>Preview before saving</h3><p>Check the title, page URL, and description together. The length indicators are estimates, not scores from an SEO tool. Changing a published slug needs confirmation and may need a redirect.</p></article>
+        <article class="card"><h3>Bring SEO from copy</h3><p>Content to Pages recognizes clearly labeled SEO details in each uploaded page section. They appear as reviewable suggestions; uploading and extracting alone do not save them.</p></article>
+        <article class="card"><h3>Save with new drafts</h3><p>Generate Drafts can save labeled SEO details when exactly one supported SEO tool is active. If no slug is supplied, WordPress handles it. With multiple active tools, the SEO details stay for review and Page SEO shows a warning.</p></article>
+      </div>
+      <p class="content-note"><strong>Scope:</strong> Page SEO is for selected WordPress pages, not Bricks templates, blog posts, or the HTML &amp; CSS Workspace. The plugin is independent of Yoast SEO and AIOSEO and is not affiliated with or endorsed by their developers.</p>
     </section>
 
     <section class="wrap section-block" id="style-manager" aria-labelledby="style-manager-title">
-      <div class="section-title"><div><p class="kicker">NEW IN VERSION 1.1.8</p><h2 id="style-manager-title">Keep your design language together.</h2><p>Style Manager gives the Main and Content to Pages workspaces a shared set of colors and variables for the current browser session.</p></div><span>02 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">INTRODUCED IN VERSION 1.1.8</p><h2 id="style-manager-title">Keep your design language together.</h2><p>Style Manager gives the Main and Content to Pages workspaces a shared set of colors and variables for the current browser session.</p></div><span>03 / 08</span></div>
       <div class="content-lead card"><div><span class="workspace-tag">OPTIONAL STYLE MANAGER</span><h3>Set the palette. Shape the scales.</h3><p>Create palette colors and dark counterparts, tune individual shades, and define fluid typography and spacing. When enabled, the assistant can use these settings in compatible Bricks controls while you review its proposals.</p></div><div class="content-lead-aside"><strong>Works with Bricks</strong><span>Import or export Bricks-compatible JSON for colors and variables. Review the generated design and import the JSON into Bricks separately.</span></div></div>
       <div class="style-feature-grid">
         <article class="card"><h3>Colors and shades</h3><p>Edit palette colors with a color picker, adjust light and dark shade steps, and restore generated values when needed.</p></article>
@@ -88,19 +99,19 @@
       <p class="content-note"><strong>How to use it:</strong> Open Style Manager from the Main or Content to Pages workspace, enable it, then save your settings. Export JSON if you want the matching colors and variables in Bricks. Review every proposed change before applying it.</p>
     </section>
     <section class="wrap section-block" id="content-to-pages">
-      <div class="section-title"><div><p class="kicker">INTRODUCED IN VERSION 1.1.7</p><h2>From final copy to draft pages.</h2><p>Content to Pages keeps page creation and design review in separate steps.</p></div><span>03 / 07</span></div>
-      <div class="content-lead card"><div><span class="workspace-tag">CONTENT TO PAGES WORKSPACE</span><h3>Bring the words. Shape the pages.</h3><p>Preview the extracted copy, add brand colors and instructions, then create WordPress drafts. Generate and refine a Bricks design for each page when you are ready.</p></div><div class="content-lead-aside"><strong>Draft first</strong><span>Pages remain drafts after design changes. Publishing requires a separate confirmation and permission.</span></div></div>
+      <div class="section-title"><div><p class="kicker">INTRODUCED IN VERSION 1.1.7</p><h2>From final copy to draft pages.</h2><p>Content to Pages keeps page creation and design review in separate steps.</p></div><span>04 / 08</span></div>
+      <div class="content-lead card"><div><span class="workspace-tag">CONTENT TO PAGES WORKSPACE</span><h3>Bring the words. Shape the pages.</h3><p>Preview the extracted copy, add brand colors and instructions, then create WordPress drafts. Clearly labeled SEO details can follow new drafts when one supported SEO tool is active. Generate and refine a Bricks design for each page when you are ready.</p></div><div class="content-lead-aside"><strong>Draft first</strong><span>Pages remain drafts after design changes. Publishing requires a separate confirmation and permission.</span></div></div>
       <ol class="content-steps">
-        <li class="card"><span>01</span><h3>Prepare your copy</h3><p>Upload a DOCX or text-based PDF with a clear title for each page, such as <code>Page: Home</code>. Files can be up to 50 MB, subject to your server's upload limit.</p></li>
+        <li class="card"><span>01</span><h3>Prepare your copy</h3><p>Upload a DOCX or text-based PDF with a clear title for each page, such as <code>Page: Home</code>. You can include labeled SEO title, keyphrase, slug, and meta description. Files can be up to 50 MB, subject to your server's upload limit.</p></li>
         <li class="card"><span>02</span><h3>Set the direction</h3><p>Choose brand colors and add design instructions. Your planner settings stay in this browser tab; the uploaded file must be added again after a reload.</p></li>
-        <li class="card"><span>03</span><h3>Create draft pages</h3><p>Generate WordPress drafts from the copy. If a title already exists, the plugin asks before skipping that page.</p></li>
+        <li class="card"><span>03</span><h3>Create draft pages</h3><p>Generate WordPress drafts from the copy. If a title already exists, the plugin asks before skipping that page. Labeled SEO details can be saved with each new draft when one supported SEO tool is active.</p></li>
         <li class="card"><span>04</span><h3>Review each design</h3><p>Generate or refine a Bricks design for a selected page, inspect the temporary preview and changes, then apply. You can also edit an existing Bricks template.</p></li>
       </ol>
-      <div class="content-note"><strong>Choose the right file:</strong> DOCX retains common bold, italic, and safe external links for Bricks text proposals. PDF extraction reads supported text and groups paragraphs where possible, but does not retain formatting or links. Image-only scans may not extract correctly.</div>
+      <div class="content-note"><strong>Choose the right file:</strong> DOCX retains common bold, italic, and safe external links for Bricks text proposals. PDF extraction reads supported text and groups paragraphs where possible, but does not retain formatting or links. Image-only scans may not extract correctly. There is no fixed page-count limit; your server may impose an upload limit below 50 MB.</div>
     </section>
 
     <section class="wrap section-block" id="quick-start">
-      <div class="section-title"><div><p class="kicker">GETTING STARTED</p><h2>Quick start</h2><p>Use the main workspace to take a page from request to reviewed change in five steps.</p></div><span>04 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">GETTING STARTED</p><h2>Quick start</h2><p>Use the main workspace to take a page from request to reviewed change in five steps.</p></div><span>05 / 08</span></div>
       <div class="card steps-card">
         <ol class="steps">
           <li><div><h3>Connect your AI provider</h3><p>A site administrator configures a compatible provider under <strong>WordPress Settings → Connectors</strong>. Choose an available model in the assistant.</p></div></li>
@@ -205,7 +216,7 @@
     </section>
 
     <section class="wrap section-block" id="capabilities">
-      <div class="section-title"><div><p class="kicker">BUILDER TOOLKIT</p><h2>Work with native Bricks elements.</h2><p>Main-workspace proposals use the selected page and registered Bricks controls to guide and validate edits.</p></div><span>05 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">BUILDER TOOLKIT</p><h2>Work with native Bricks elements.</h2><p>Main-workspace proposals use the selected page and registered Bricks controls to guide and validate edits.</p></div><span>06 / 08</span></div>
       <div class="capability-grid">
         <article class="card capability"><span class="card-icon" aria-hidden="true">▣</span><h3>Edit native elements</h3><p>Change supported text, layout, and style settings, including breakpoint values where controls allow them.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">＋</span><h3>Add, move, and remove</h3><p>Add registered elements and supported nested children, move elements, or remove elements and their descendants.</p></article>
@@ -217,23 +228,26 @@
         <article class="card capability"><span class="card-icon" aria-hidden="true">▧</span><h3>Reserve image slots</h3><p>When no suitable site image is selected, the assistant can propose labeled placeholders built from native Bricks elements.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">◉</span><h3>Know when it finishes</h3><p>An unattended request can add an unread count to the tab title. Optional desktop alerts require your permission and an open tab.</p></article>
       </div>
-      <div class="limitations"><div><p class="kicker">CURRENT BOUNDARIES</p><h3>Review each result</h3></div><p>The main and Content to Pages workspaces change registered native Bricks controls; neither writes code controls or Custom CSS. The HTML &amp; CSS Workspace makes drafts for manual copying. Content to Pages creates WordPress pages as drafts, but does not create templates, set template conditions, or add SEO fields.</p></div>
+      <div class="limitations"><div><p class="kicker">CURRENT BOUNDARIES</p><h3>Review each result</h3></div><p>The main and Content to Pages workspaces change registered native Bricks controls; neither writes code controls or Custom CSS. The HTML &amp; CSS Workspace makes drafts for manual copying. Content to Pages creates WordPress pages as drafts, but does not create templates or set template conditions. Page SEO separately edits supported metadata on selected WordPress pages; labeled SEO details can also be saved with a new draft when one supported tool is active.</p></div>
     </section>
 
     <section class="wrap section-block" id="review">
-      <div class="section-title"><div><p class="kicker">REVIEW &amp; DATA</p><h2>Know what happens before you apply.</h2><p>The plugin makes its workflows and provider data sharing clear.</p></div><span>06 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">REVIEW &amp; DATA</p><h2>Know what happens before you apply.</h2><p>The plugin makes its workflows and provider data sharing clear.</p></div><span>07 / 08</span></div>
       <div class="review-grid">
         <article class="card"><span class="card-icon" aria-hidden="true">◇</span><h3>Preview before applying</h3><p>Main and Content to Pages design proposals use private temporary frontend previews. WordPress draft pages created from copy persist, while publishing requires a separate confirmation.</p></article>
         <article class="card"><span class="card-icon" aria-hidden="true">⌁</span><h3>Your selected provider</h3><p>The main workspace sends your prompt and selected Bricks content. Content to Pages can also send extracted copy and planner guidance. Optional reference images and metadata for explicitly selected Media Library images may be sent; selected image files are not.</p></article>
-        <article class="card"><span class="card-icon" aria-hidden="true">▢</span><h3>Browser-session details</h3><p>Chats and saved planner settings stay in the current browser tab, not in WordPress. Uploaded copy files and extracted text are not saved by the plugin; re-upload after leaving or reloading. Provider costs and data handling vary.</p></article>
+        <article class="card"><span class="card-icon" aria-hidden="true">▢</span><h3>Browser-session details</h3><p>Chats and saved planner settings stay in the current browser tab, not in WordPress. Uploaded copy files and extracted text are not saved by the plugin; re-upload after leaving or reloading. Draft pages, applied designs, and supported SEO fields you save do persist in WordPress. Provider costs and data handling vary.</p></article>
       </div>
     </section>
 
     <section class="wrap section-block faq-block" id="faq">
-      <div class="section-title"><div><p class="kicker">HELP CENTER</p><h2>Frequently asked questions</h2></div><span>07 / 07</span></div>
+      <div class="section-title"><div><p class="kicker">HELP CENTER</p><h2>Frequently asked questions</h2></div><span>08 / 08</span></div>
       <div class="faq-list">
+        <details class="card"><summary>Which SEO tools does Page SEO support?</summary><p>The initial integration supports Yoast SEO and AIOSEO for SEO titles, meta descriptions, supported focus keyphrases, and the WordPress page slug. Available fields depend on the active tool and your account. The plugin is independent of both SEO tools.</p></details>
+        <details class="card"><summary>Does uploading copy immediately save SEO details?</summary><p>No. After extraction, clearly labeled SEO details appear as suggestions for each page. Generate Drafts can save those labeled details with newly created drafts when exactly one supported SEO tool is active. Later edits require Apply in Page SEO. If no slug is supplied, WordPress handles it.</p></details>
+        <details class="card"><summary>What if more than one SEO tool is active?</summary><p>Page SEO warns when multiple SEO tools are active because their metadata can conflict. Keep one SEO plugin active for reliable page metadata. Page SEO does not edit Bricks templates, blog posts, or HTML and CSS drafts.</p></details>
         <details class="card"><summary>Does Style Manager automatically add variables to Bricks?</summary><p>No. Style Manager can guide compatible design proposals while enabled. Export its Bricks-compatible JSON and import it into Bricks separately if you want the matching colors and variables in your site.</p></details>
-        <details class="card"><summary>Can Content to Pages make a full website?</summary><p>It can create WordPress draft pages from your final copy and prepare a separate Bricks design for each page. Review and apply each proposal, then publish pages separately. It does not create templates, set template conditions, or add SEO fields.</p></details>
+        <details class="card"><summary>Can Content to Pages make a full website?</summary><p>It can create WordPress draft pages from your final copy and prepare a separate Bricks design for each page. Review and apply each proposal, then publish pages separately. It does not create templates or set template conditions. Its Page SEO editor can review supported metadata for selected pages, and labeled SEO details can be saved with new drafts when one supported tool is active.</p></details>
         <details class="card"><summary>Should I upload DOCX or PDF copy?</summary><p>Use DOCX when bold, italic, or links matter. Text-based PDFs can supply readable copy, but their formatting and links are not retained; image-only scans may not extract correctly. The extracted-copy preview is plain text for both.</p></details>
         <details class="card"><summary>Does the assistant edit blog posts?</summary><p>No. It edits eligible WordPress pages and Bricks templates, and Content to Pages creates draft pages. It can configure supported Query Loops to display existing posts, but does not edit or create blog posts.</p></details>
         <details class="card"><summary>Can I use images from my Media Library?</summary><p>Yes. Choose up to five existing site images, then describe where you want them placed. Their metadata goes to the selected provider, but the selected image files do not. The plugin can propose labeled native placeholders for missing visuals.</p></details>
@@ -246,7 +260,7 @@
       </div>
     </section>
 
-    <section class="wrap closing"><div><p class="kicker">READY TO EXPLORE?</p><h2>Design with a little help.</h2><p>Get the free, open-source plugin to review Bricks page edits, explore HTML and CSS ideas, or turn final copy into draft pages.</p></div><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View on WordPress.org <span aria-hidden="true">↗</span></a></section>
+    <section class="wrap closing"><div><p class="kicker">READY TO EXPLORE?</p><h2>Design with a little help.</h2><p>Get the free, open-source plugin to review Bricks page edits, explore HTML and CSS ideas, turn final copy into draft pages, and manage supported Page SEO details.</p></div><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View on WordPress.org <span aria-hidden="true">↗</span></a></section>
   </main>
 
   <dialog class="screenshot-dialog" aria-label="Enlarged screenshot">
@@ -255,6 +269,6 @@
     <p class="dialog-caption"></p>
   </dialog>
 
-  <footer class="site-footer"><div class="wrap footer-inner"><div><a class="footer-brand" href="#top"><img src="assets/brand-icon.svg" alt="" width="32" height="32"><strong>MJC Designs AI</strong></a><p>Made for thoughtful Bricks workflows.</p></div><div class="footer-links"><a href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">WordPress.org <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@MJCDesignsAIDesignAssistant" target="_blank" rel="noopener noreferrer">YouTube tutorials <span aria-hidden="true">↗</span></a><a href="https://github.com/mjcdesigns/mjcdesigns-ai-design-assistant-site" target="_blank" rel="noopener noreferrer">Website source <span aria-hidden="true">↗</span></a></div></div><div class="wrap footer-bottom"><small>MJC Designs AI Design Assistant for Bricks Builder is an independent third-party integration. It is not affiliated with or endorsed by Bricks Builder or its developers.</small><small>© <span id="year">2026</span> MJC Designs</small></div></footer>
+  <footer class="site-footer"><div class="wrap footer-inner"><div><a class="footer-brand" href="#top"><img src="assets/brand-icon.svg" alt="" width="32" height="32"><strong>MJC Designs AI</strong></a><p>Made for thoughtful Bricks workflows.</p></div><div class="footer-links"><a href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">WordPress.org <span aria-hidden="true">↗</span></a><a href="https://www.youtube.com/@MJCDesignsAIDesignAssistant" target="_blank" rel="noopener noreferrer">YouTube tutorials <span aria-hidden="true">↗</span></a><a href="https://github.com/mjcdesigns/mjcdesigns-ai-design-assistant-site" target="_blank" rel="noopener noreferrer">Website source <span aria-hidden="true">↗</span></a></div></div><div class="wrap footer-bottom"><small>MJC Designs AI Design Assistant for Bricks Builder is an independent third-party integration. It is not affiliated with or endorsed by Bricks Builder, Yoast SEO, AIOSEO, or their developers.</small><small>© <span id="year">2026</span> MJC Designs</small></div></footer>
 </body>
 </html>
