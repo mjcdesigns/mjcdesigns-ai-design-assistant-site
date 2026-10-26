@@ -104,3 +104,43 @@ document.querySelectorAll('.video-play').forEach((button) => {
     frame.focus();
   });
 });
+const historySection = document.querySelector('#history');
+const historyRows = [...historySection.querySelectorAll('.history-table tbody tr')];
+const historyPager = historySection.querySelector('.history-pagination');
+const historySummary = historyPager.querySelector('.history-pagination-summary');
+const historyControls = historyPager.querySelector('.history-pagination-controls');
+const historyPerPage = 12;
+const historyPageCount = Math.ceil(historyRows.length / historyPerPage);
+let historyPage = 1;
+
+function renderHistoryPage(page, moveToSection = false) {
+  historyPage = Math.max(1, Math.min(historyPageCount, page));
+  const first = (historyPage - 1) * historyPerPage;
+  historyRows.forEach((row, index) => { row.hidden = index < first || index >= first + historyPerPage; });
+  historySummary.textContent = `Showing ${first + 1}–${Math.min(first + historyPerPage, historyRows.length)} of ${historyRows.length} entries`;
+  historyControls.replaceChildren();
+
+  function addButton(label, targetPage, disabled, current = false, arrow = false) {
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = `history-page-button${arrow ? ' history-page-arrow' : ''}`;
+    button.textContent = label;
+    button.setAttribute('aria-label', arrow ? (targetPage < historyPage ? 'Previous page' : 'Next page') : `Page ${targetPage}`);
+    if (current) button.setAttribute('aria-current', 'page');
+    button.disabled = disabled;
+    button.addEventListener('click', () => renderHistoryPage(targetPage, true));
+    historyControls.append(button);
+  }
+
+  addButton('‹', historyPage - 1, historyPage === 1, false, true);
+  for (let number = 1; number <= historyPageCount; number += 1) {
+    addButton(String(number), number, number === historyPage, number === historyPage);
+  }
+  addButton('›', historyPage + 1, historyPage === historyPageCount, false, true);
+  if (moveToSection) historySection.scrollIntoView({ behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
+}
+
+if (historyPageCount > 1) {
+  historyPager.hidden = false;
+  renderHistoryPage(1);
+}
