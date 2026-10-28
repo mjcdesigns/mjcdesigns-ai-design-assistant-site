@@ -384,11 +384,8 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .theme-release-extra a { margin:0; }
 .history-version-group[hidden] { display:none; }
 .history-table .history-version-group + .history-version-group tr:first-child > * { border-top:2px solid #544866; }
-.history-table .history-version-group tr:first-child > th[rowspan],
-.history-table .history-version-group tr:first-child > td[rowspan] { background:#292333; }
-.history-table .history-version-group tr:hover > th[rowspan],
-.history-table .history-version-group tr:hover > td[rowspan] { background:#30293b; }
-.history-table .history-version-group tr:first-child > th[rowspan] { min-width:145px; }
+.history-table .history-version-group tr:first-child > th[rowspan] { background:#292333; min-width:145px; }
+.history-table .history-version-group tr:hover > th[rowspan] { background:#30293b; }
 .history-table .history-type-cell { width:160px; }
 @media (max-width:900px) {
   .theme-showcase-copy { grid-template-columns:1fr; gap:18px; }
