@@ -105,19 +105,19 @@ document.querySelectorAll('.video-play').forEach((button) => {
   });
 });
 const historySection = document.querySelector('#history');
-const historyRows = [...historySection.querySelectorAll('.history-table tbody tr')];
+const historyGroups = [...historySection.querySelectorAll('.history-table tbody.history-version-group')];
 const historyPager = historySection.querySelector('.history-pagination');
 const historySummary = historyPager.querySelector('.history-pagination-summary');
 const historyControls = historyPager.querySelector('.history-pagination-controls');
 const historyPerPage = 12;
-const historyPageCount = Math.ceil(historyRows.length / historyPerPage);
+const historyPageCount = Math.ceil(historyGroups.length / historyPerPage);
 let historyPage = 1;
 
 function renderHistoryPage(page, moveToSection = false) {
   historyPage = Math.max(1, Math.min(historyPageCount, page));
   const first = (historyPage - 1) * historyPerPage;
-  historyRows.forEach((row, index) => { row.hidden = index < first || index >= first + historyPerPage; });
-  historySummary.textContent = `Showing ${first + 1}–${Math.min(first + historyPerPage, historyRows.length)} of ${historyRows.length} entries`;
+  historyGroups.forEach((group, index) => { group.hidden = index < first || index >= first + historyPerPage; });
+  historySummary.textContent = `Showing ${first + 1}–${Math.min(first + historyPerPage, historyGroups.length)} of ${historyGroups.length} versions`;
   historyControls.replaceChildren();
 
   function addButton(label, targetPage, disabled, current = false, arrow = false) {

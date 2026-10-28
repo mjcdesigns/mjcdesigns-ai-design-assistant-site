@@ -367,3 +367,35 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
   .primary-nav a:not(.nav-button) { padding:12px 4px; border-bottom:1px solid #ffffff20; }
   .nav-button { margin-top:12px; text-align:center; }
 }
+
+/* 1.1.11 release highlight and grouped Version History. */
+.theme-showcase { overflow:hidden; border-color:#604a82; background:linear-gradient(135deg,#261e37,#18181d 72%); }
+.theme-showcase-image { display:block; line-height:0; }
+.theme-showcase-image img { display:block; width:100%; height:auto; }
+.theme-showcase-image:focus-visible { outline:3px solid #c9baff; outline-offset:-3px; }
+.theme-showcase-copy { display:grid; grid-template-columns:1.25fr .75fr; gap:30px; padding:28px 30px; }
+.theme-showcase-copy h3 { margin:14px 0 7px; font-size:25px; letter-spacing:-.035em; }
+.theme-showcase-copy p { margin:0; color:var(--text); font-size:12px; line-height:1.7; }
+.theme-showcase-aside { padding-left:25px; border-left:1px solid #604a82; }
+.theme-showcase-aside strong { display:block; color:#e2d3fa; font-size:13px; margin-bottom:6px; }
+.theme-showcase-aside a,.theme-release-extra a { display:inline-block; margin-top:12px; color:#c9baff; font-size:11px; font-weight:750; }
+.theme-showcase-aside a:hover,.theme-release-extra a:hover { color:#fff; }
+.theme-release-extra { margin:14px 0 0; padding:15px 18px; border:1px solid #403451; border-radius:11px; background:#211b2d; color:#cbc2d7; font-size:12px; line-height:1.7; }
+.theme-release-extra a { margin:0; }
+.history-version-group[hidden] { display:none; }
+.history-table .history-version-group + .history-version-group tr:first-child > * { border-top:2px solid #544866; }
+.history-table .history-version-group tr:first-child > th[rowspan],
+.history-table .history-version-group tr:first-child > td[rowspan] { background:#292333; }
+.history-table .history-version-group tr:hover > th[rowspan],
+.history-table .history-version-group tr:hover > td[rowspan] { background:#30293b; }
+.history-table .history-version-group tr:first-child > th[rowspan] { min-width:145px; }
+.history-table .history-type-cell { width:160px; }
+@media (max-width:900px) {
+  .theme-showcase-copy { grid-template-columns:1fr; gap:18px; }
+  .theme-showcase-aside { padding:16px 0 0; border-left:0; border-top:1px solid #604a82; }
+}
+@media (max-width:620px) {
+  .theme-showcase-copy { padding:21px; }
+  .theme-showcase-copy h3 { font-size:21px; }
+  .theme-release-extra { padding:13px 15px; }
+}
