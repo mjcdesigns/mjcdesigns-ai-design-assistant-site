@@ -7,7 +7,7 @@
   <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.12 includes five plugin interface color themes and optional Page SEO editing for selected WordPress pages, with initial Yoast SEO and AIOSEO support alongside reviewed Bricks designs.">
   <title>MJC Designs AI Design Assistant for Bricks Builder</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand-icon.svg">
-  <link rel="stylesheet" href="assets/styles.css?v=1.1.12">
+  <link rel="stylesheet" href="assets/styles.css?v=1.1.12-layout">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -16,7 +16,7 @@
     <div class="header-inner">
       <a class="brand" href="#top" aria-label="MJC Designs AI home">
         <picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="42" height="42"></picture>
-        <span><strong>MJC Designs AI</strong><small>DESIGN ASSISTANT FOR BRICKS BUILDER</small></span>
+        <span><strong>MJC Designs <span class="brand-ai">AI</span></strong><small>DESIGN ASSISTANT FOR BRICKS BUILDER</small></span>
       </a>
       <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav"><span></span><span></span><span></span></button>
       <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
@@ -27,15 +27,7 @@
   </header>
 
   <main id="main">
-    <div class="wrap alpha-notice" id="top" role="note" aria-label="Alpha testing notice">
-      <span aria-hidden="true">i</span>
-      <div class="alpha-notice-copy">
-        <p><strong>Alpha testing in progress.</strong> This plugin will stay in alpha until it has been tested across different AI providers and WordPress versions. Suggestions may be incomplete or incorrect; review each change and keep a backup.</p>
-        <p>Want to volunteer as a tester? Try it with your setup, then email your provider, WordPress version, and findings to <a href="mailto:mjcdesigns2k26@gmail.com?subject=MJC%20Designs%20AI%20alpha%20testing">mjcdesigns2k26@gmail.com</a>.</p>
-      </div>
-    </div>
-
-    <section class="hero wrap">
+    <section class="hero wrap" id="top">
       <div class="hero-copy">
         <p class="eyebrow">MJC DESIGNS · AI DESIGN ASSISTANT</p>
         <h1>Design with<br><em>a little help.</em></h1>
@@ -45,6 +37,14 @@
       </div>
       <div class="hero-icon" aria-hidden="true"><div class="hero-halo"></div><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="260" height="260"></picture><span>✦</span></div>
     </section>
+
+    <div class="wrap alpha-notice" role="note" aria-label="Alpha testing notice">
+      <span aria-hidden="true">i</span>
+      <div class="alpha-notice-copy">
+        <p><strong>Alpha testing in progress.</strong> This plugin will stay in alpha until it has been tested across different AI providers and WordPress versions. Suggestions may be incomplete or incorrect; review each change and keep a backup.</p>
+        <p>Want to volunteer as a tester? Try it with your setup, then email your provider, WordPress version, and findings to <a href="mailto:mjcdesigns2k26@gmail.com?subject=MJC%20Designs%20AI%20alpha%20testing">mjcdesigns2k26@gmail.com</a>.</p>
+      </div>
+    </div>
 
     <section class="wrap overview-grid" id="about" aria-label="About the assistant">
       <article class="card about-card">
@@ -60,7 +60,7 @@
       <div class="workspace-grid">
         <article class="card workspace-card">
           <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">▣</span><span class="workspace-tag">EDIT A BRICKS PAGE</span></div>
-          <h3>Main workspace</h3>
+          <h3>Main Workspace</h3>
           <p>Select a page or Bricks template. The assistant reads its elements and live registered controls, proposes native changes, and checks them before you preview or apply.</p>
           <ul><li>Add, edit, move, or remove supported elements</li><li>Use another editable page as a design reference</li><li>Preview, apply, and undo or redo reviewed changes</li></ul>
           <a href="#quick-start">See the page workflow <span aria-hidden="true">↓</span></a>
@@ -74,7 +74,7 @@
         </article>
         <article class="card workspace-card workspace-card-new">
           <div class="workspace-card-top"><span class="card-icon" aria-hidden="true">▤</span><span class="workspace-tag">NEW IN 1.1.7</span></div>
-          <h3>Content to Pages</h3>
+          <h3>Content to Pages Workspace</h3>
           <p>Upload final copy, set brand guidance, and create WordPress draft pages. Prepare a separate Bricks design for each page, then review it before applying.</p>
           <ul><li>Read DOCX or text-based PDF copy files</li><li>Generate drafts with optional labeled SEO details</li><li>Refine pages or an existing Bricks template</li></ul>
           <a href="#content-to-pages">Explore the workflow <span aria-hidden="true">↓</span></a>
@@ -156,8 +156,8 @@
         </div>
       </div>
       <div class="screenshot-group" data-gallery="main">
-        <div class="screenshot-group-head"><div><h3>Main workspace</h3><p>1–14 · 14 screenshots</p></div><div class="screenshot-controls"><span class="screenshot-position" aria-live="polite">1 / 14</span><button class="screenshot-prev" type="button" aria-label="Previous Main workspace screenshot" aria-controls="gallery-main">‹</button><button class="screenshot-next" type="button" aria-label="Next Main workspace screenshot" aria-controls="gallery-main">›</button></div></div>
-        <div class="screenshot-track" id="gallery-main" role="region" aria-label="Main workspace screenshots" tabindex="0">
+        <div class="screenshot-group-head"><div><h3>Main Workspace</h3><p>1–14 · 14 screenshots</p></div><div class="screenshot-controls"><span class="screenshot-position" aria-live="polite">1 / 14</span><button class="screenshot-prev" type="button" aria-label="Previous Main Workspace screenshot" aria-controls="gallery-main">‹</button><button class="screenshot-next" type="button" aria-label="Next Main Workspace screenshot" aria-controls="gallery-main">›</button></div></div>
+        <div class="screenshot-track" id="gallery-main" role="region" aria-label="Main Workspace screenshots" tabindex="0">
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 1: Request a Bricks page change"><img src="assets/screenshots/screenshot-1.png" alt="Request a Bricks page change in the Main workspace" loading="lazy" decoding="async" width="1917" height="1078"></button><figcaption><span>01 / 14</span><strong>Request a Bricks page change</strong></figcaption></figure>
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 2: Inspect the selected image element"><img src="assets/screenshots/screenshot-2.png" alt="Inspect the selected image element in the Main workspace" loading="lazy" decoding="async" width="1917" height="1078"></button><figcaption><span>02 / 14</span><strong>Inspect the selected image element</strong></figcaption></figure>
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 3: Review proposed element edits"><img src="assets/screenshots/screenshot-3.png" alt="Review proposed element edits in the Main workspace" loading="lazy" decoding="async" width="1467" height="867"></button><figcaption><span>03 / 14</span><strong>Review proposed element edits</strong></figcaption></figure>
@@ -194,8 +194,8 @@
         </div>
       </div>
       <div class="screenshot-group" data-gallery="content-pages">
-        <div class="screenshot-group-head"><div><h3>Content to Pages</h3><p>29–43 · 15 screenshots</p></div><div class="screenshot-controls"><span class="screenshot-position" aria-live="polite">1 / 15</span><button class="screenshot-prev" type="button" aria-label="Previous Content to Pages screenshot" aria-controls="gallery-content-pages">‹</button><button class="screenshot-next" type="button" aria-label="Next Content to Pages screenshot" aria-controls="gallery-content-pages">›</button></div></div>
-        <div class="screenshot-track" id="gallery-content-pages" role="region" aria-label="Content to Pages screenshots" tabindex="0">
+        <div class="screenshot-group-head"><div><h3>Content to Pages Workspace</h3><p>29–43 · 15 screenshots</p></div><div class="screenshot-controls"><span class="screenshot-position" aria-live="polite">1 / 15</span><button class="screenshot-prev" type="button" aria-label="Previous Content to Pages Workspace screenshot" aria-controls="gallery-content-pages">‹</button><button class="screenshot-next" type="button" aria-label="Next Content to Pages Workspace screenshot" aria-controls="gallery-content-pages">›</button></div></div>
+        <div class="screenshot-track" id="gallery-content-pages" role="region" aria-label="Content to Pages Workspace screenshots" tabindex="0">
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 29: Open the Content to Pages workspace"><img src="assets/screenshots/screenshot-29.png" alt="Open the Content to Pages workspace in the Content to Pages" loading="lazy" decoding="async" width="1917" height="1078"></button><figcaption><span>01 / 15</span><strong>Open the Content to Pages workspace</strong></figcaption></figure>
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 30: Add website planner instructions"><img src="assets/screenshots/screenshot-30.png" alt="Add website planner instructions in the Content to Pages" loading="lazy" decoding="async" width="1917" height="1078"></button><figcaption><span>02 / 15</span><strong>Add website planner instructions</strong></figcaption></figure>
           <figure class="screenshot-card card"><button class="screenshot-open" type="button" aria-label="Enlarge screenshot 31: Set brand colors and upload copy"><img src="assets/screenshots/screenshot-31.png" alt="Set brand colors and upload copy in the Content to Pages" loading="lazy" decoding="async" width="1917" height="1078"></button><figcaption><span>03 / 15</span><strong>Set brand colors and upload copy</strong></figcaption></figure>
@@ -223,9 +223,9 @@
 
     <section class="wrap video-section" aria-label="Tutorial video previews">
       <div class="video-row">
-        <article class="video-card card"><button class="video-play" type="button" data-video-id="DnhD92sQDTs" aria-label="Play Content to Pages Workspace v1.1.7 tutorial"><img src="https://i.ytimg.com/vi/DnhD92sQDTs/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Content to Pages Workspace</h3><p>Version 1.1.7 update</p></article>
-        <article class="video-card card"><button class="video-play" type="button" data-video-id="uCaL_38eGeg" aria-label="Play HTML and CSS Workspace feature demo"><img src="https://i.ytimg.com/vi/uCaL_38eGeg/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>HTML &amp; CSS Workspace</h3><p>Version 1.1.6 feature demo</p></article>
-        <article class="video-card card"><button class="video-play" type="button" data-video-id="1huBiqWw_MY" aria-label="Play image reference and Media Library tutorial"><img src="https://i.ytimg.com/vi/1huBiqWw_MY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Image references &amp; Media Library</h3><p>Version 1.1.5 walkthrough</p></article>
+        <article class="video-card card"><button class="video-play" type="button" data-video-id="14GGq1oVnys" aria-label="Play Color Themes and Improvements v1.1.11 tutorial"><img src="https://i.ytimg.com/vi/14GGq1oVnys/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Color themes &amp; improvements</h3><p>Version 1.1.11 update</p></article>
+        <article class="video-card card"><button class="video-play" type="button" data-video-id="Twsc76adARY" aria-label="Play Basic SEO Editor v1.1.9 tutorial"><img src="https://i.ytimg.com/vi/Twsc76adARY/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Basic SEO Editor</h3><p>Version 1.1.9 update</p></article>
+        <article class="video-card card"><button class="video-play" type="button" data-video-id="KtNWXH5DtYc" aria-label="Play Style Manager v1.1.8 tutorial"><img src="https://i.ytimg.com/vi/KtNWXH5DtYc/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Style Manager</h3><p>Version 1.1.8 update</p></article>
         <article class="video-card card"><button class="video-play" type="button" data-video-id="6aAGUea4cvk" aria-label="Play quick introduction to the assistant"><img src="https://i.ytimg.com/vi/6aAGUea4cvk/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><span class="video-play-icon" aria-hidden="true">▶</span></button><h3>Quick introduction</h3><p>Meet the design assistant</p></article>
       </div>
     </section>

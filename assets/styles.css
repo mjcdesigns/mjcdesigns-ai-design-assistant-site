@@ -8,17 +8,18 @@ html { scroll-behavior:smooth; scroll-padding-top:88px; }
 body { margin:0; line-height:1.6; }
 a { color:inherit; text-decoration:none; }
 button { font:inherit; }
-.wrap { width:min(1100px,calc(100% - 48px)); margin-inline:auto; }
+.wrap { width:min(1240px,calc(100% - 48px)); margin-inline:auto; }
 .skip-link { position:fixed; top:8px; left:8px; z-index:100; background:#2b2436; color:white; padding:10px 14px; transform:translateY(-150%); }
 .skip-link:focus { transform:none; }
 
 .site-header { position:sticky; top:0; z-index:20; background:#17151c; color:white; border-bottom:1px solid #ffffff16; }
-.header-inner { width:min(1180px,calc(100% - 48px)); height:76px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
+.header-inner { width:min(1240px,calc(100% - 48px)); height:76px; margin:auto; display:flex; align-items:center; justify-content:space-between; gap:24px; }
 .brand { display:inline-flex; align-items:center; gap:11px; min-width:0; }
 .brand picture,.brand img { display:block; width:42px; height:42px; border-radius:10px; }
 .brand strong,.brand small { display:block; line-height:1.2; }
 .brand strong { font-size:15px; letter-spacing:-.02em; }
-.brand small { margin-top:4px; color:#bdb4ce; font-size:8px; font-weight:700; letter-spacing:.1em; }
+.brand-ai { color:#bdb4ce; }
+.brand small { margin-top:4px; color:#fff; font-size:8px; font-weight:700; letter-spacing:.1em; }
 .primary-nav { display:flex; align-items:center; gap:16px; font-size:11px; font-weight:600; }
 .primary-nav a:not(.nav-button) { color:#d8d2e2; }
 .primary-nav a:not(.nav-button):hover { color:white; }
