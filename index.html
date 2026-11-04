@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17151c">
-  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.11 includes five plugin interface color themes and optional Page SEO editing for selected WordPress pages, with initial Yoast SEO and AIOSEO support alongside reviewed Bricks designs.">
+  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.12 includes five plugin interface color themes and optional Page SEO editing for selected WordPress pages, with initial Yoast SEO and AIOSEO support alongside reviewed Bricks designs.">
   <title>MJC Designs AI Design Assistant for Bricks Builder</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand-icon.svg">
-  <link rel="stylesheet" href="assets/styles.css?v=1.1.11">
+  <link rel="stylesheet" href="assets/styles.css?v=1.1.12">
   <script src="assets/site.js" defer></script>
 </head>
 <body>
@@ -27,18 +27,24 @@
   </header>
 
   <main id="main">
-    <section class="hero wrap" id="top">
+    <div class="wrap alpha-notice" id="top" role="note" aria-label="Alpha testing notice">
+      <span aria-hidden="true">i</span>
+      <div class="alpha-notice-copy">
+        <p><strong>Alpha testing in progress.</strong> This plugin will stay in alpha until it has been tested across different AI providers and WordPress versions. Suggestions may be incomplete or incorrect; review each change and keep a backup.</p>
+        <p>Want to volunteer as a tester? Try it with your setup, then email your provider, WordPress version, and findings to <a href="mailto:mjcdesigns2k26@gmail.com?subject=MJC%20Designs%20AI%20alpha%20testing">mjcdesigns2k26@gmail.com</a>.</p>
+      </div>
+    </div>
+
+    <section class="hero wrap">
       <div class="hero-copy">
         <p class="eyebrow">MJC DESIGNS · AI DESIGN ASSISTANT</p>
         <h1>Design with<br><em>a little help.</em></h1>
-        <p class="hero-intro">Shape a Bricks page, explore an HTML &amp; CSS concept, or turn final copy into draft pages. New in 1.1.11: choose from five interface color themes for your workspace.</p>
+        <p class="hero-intro">Shape a Bricks page, explore an HTML &amp; CSS concept, or turn final copy into draft pages. Choose from five interface color themes for your workspace.</p>
         <div class="hero-actions"><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the free plugin <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#workspaces">See the workspaces <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-meta"><span class="version-pill">VERSION 1.1.11 · ALPHA</span><span>Free &amp; open source</span></div>
+        <div class="hero-meta"><span class="version-pill">VERSION 1.1.12 · ALPHA</span><span>Free &amp; open source</span></div>
       </div>
       <div class="hero-icon" aria-hidden="true"><div class="hero-halo"></div><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="260" height="260"></picture><span>✦</span></div>
     </section>
-
-    <div class="wrap alpha-notice" role="note"><span aria-hidden="true">i</span><p><strong>Alpha release.</strong> Suggestions may be incomplete or incorrect. Review every change and keep a backup before applying.</p></div>
 
     <section class="wrap overview-grid" id="about" aria-label="About the assistant">
       <article class="card about-card">
@@ -126,7 +132,7 @@
           <li><div><h3>Connect your AI provider</h3><p>A site administrator configures a compatible provider under <strong>WordPress Settings → Connectors</strong>. Choose an available model in the assistant.</p></div></li>
           <li><div><h3>Enable Bricks abilities</h3><p>Under <strong>Bricks → AI → Abilities</strong>, enable <code>get-page-elements</code>, <code>set-page-elements</code>, and <code>get-element-schema</code>.</p></div></li>
           <li><div><h3>Select a page or template</h3><p>Choose an editable WordPress page or Bricks template. Pages without Bricks elements can be selected too.</p></div></li>
-          <li><div><h3>Describe the change</h3><p>Optionally attach a JPG, PNG, or WebP reference image up to 5 MB, choose up to five Media Library images, or name another editable page for design guidance.</p></div></li>
+          <li><div><h3>Describe the change</h3><p>Optionally attach a JPG, PNG, or WebP reference image up to 5 MB, choose up to ten Media Library images, or name another editable page for design guidance.</p></div></li>
           <li><div><h3>Review, then apply</h3><p>Check the frontend preview and proposed edits across desktop, tablet, and mobile. Apply when ready; use Undo or Redo for the last assistant change.</p></div></li>
         </ol>
         <aside class="requirements"><h3>Requirements</h3><div><strong>WordPress</strong><span>7.0 or later, with AI Client</span></div><div><strong>Bricks Builder</strong><span>2.4 or later</span></div><div><strong>PHP</strong><span>7.4 or later; Zip and XML for DOCX, zlib for compressed PDF text</span></div><div><strong>AI provider</strong><span>Compatible integration configured</span></div><a href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">View installation details <span aria-hidden="true">↗</span></a></aside>
@@ -230,7 +236,7 @@
         <article class="card capability"><span class="card-icon" aria-hidden="true">▣</span><h3>Edit native elements</h3><p>Change supported text, layout, and style settings, including breakpoint values where controls allow them.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">＋</span><h3>Add, move, and remove</h3><p>Add registered elements and supported nested children, move elements, or remove elements and their descendants.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">▤</span><h3>Start an empty page</h3><p>Begin a page without existing Bricks elements using a section or container.</p></article>
-        <article class="card capability"><span class="card-icon" aria-hidden="true">▧</span><h3>Place selected images</h3><p>Choose up to five Media Library images and propose their placement in native Bricks image controls.</p></article>
+        <article class="card capability"><span class="card-icon" aria-hidden="true">▧</span><h3>Place selected images</h3><p>Choose up to ten Media Library images and propose their placement in native Bricks image controls.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">◫</span><h3>Review across widths</h3><p>Use the temporary frontend preview and your site's configured Bricks breakpoints to inspect the result.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">↶</span><h3>Apply, undo, redo</h3><p>Save a reviewed proposal, undo the most recent assistant change, or redo that undone change.</p></article>
         <article class="card capability"><span class="card-icon" aria-hidden="true">◇</span><h3>Reference another page</h3><p>Name one other editable page to guide layout and styling. Only the page you selected for editing can receive changes.</p></article>
@@ -252,9 +258,12 @@
     <section class="wrap section-block history-section" id="history" aria-labelledby="history-title">
       <div class="section-title"><div><p class="kicker">RELEASE NOTES</p><h2 id="history-title">Version History</h2><p>A compact record of plugin updates.</p></div><span>09 / 10</span></div>
       <div class="history-card card">
-        <div class="history-intro"><div><h3>Release timeline</h3><p>Updates, newest first. Earlier 0.x work is grouped because its exact release dates were not recorded.</p></div><span class="history-current">Current · 1.1.11 (alpha)</span></div>
+        <div class="history-intro"><div><h3>Release timeline</h3><p>Updates, newest first. Earlier 0.x work is grouped because its exact release dates were not recorded.</p></div><span class="history-current">Current · 1.1.12 (alpha)</span></div>
         <div class="history-legend" aria-label="Change types"><span><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span><span><i class="history-dot is-fix" aria-hidden="true"></i>Fixes</span></div>
         <div class="history-table-wrap"><table class="history-table"><thead><tr><th scope="col">Version</th><th scope="col">Released (Asia/Manila · UTC+8)</th><th scope="col">Type</th><th scope="col">Updates</th></tr></thead>
+        <tbody class="history-version-group">
+          <tr><th scope="rowgroup" rowspan="1"><span class="history-version">1.1.12 (alpha)</span></th><td class="history-date" rowspan="1"><time datetime="2026-11-05T02:21:03+08:00"><span>Nov 5, 2026</span><small>2:21:03 AM PHT</small></time></td><td class="history-type-cell"><span class="history-type"><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span></td><td><ul class="history-updates"><li><span class="history-item-number">1.</span><span>Improved internal code organization and tightened safeguards to make the plugin easier to maintain.</span></li><li><span class="history-item-number">2.</span><span>Increased the maximum number of selectable site images from five to ten.</span></li></ul></td></tr>
+        </tbody>
         <tbody class="history-version-group">
           <tr><th scope="rowgroup" rowspan="3"><span class="history-version">1.1.11 (alpha)</span></th><td class="history-date" rowspan="3"><time datetime="2026-10-28T22:26:34+08:00"><span>Oct 28, 2026</span><small>10:26:34 PM PHT</small></time></td><td class="history-type-cell"><span class="history-type"><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span></td><td><ul class="history-updates"><li><span class="history-item-number">1.</span><span>Remove redundant footer Close buttons from Style Manager and the Create draft form; use their top-right X controls to close.</span></li><li><span class="history-item-number">2.</span><span>Use Page SEO in Main Workspace or Content to Pages to move the selected page to WordPress Trash after confirmation. A loading panel appears while the page is moved, then the workspace selects another available document. Pages in Trash can be restored until WordPress empties it.</span></li><li><span class="history-item-number">3.</span><span>Create one WordPress draft from the plus icon beside Bricks Document in Main or Content to Pages. The form keeps unfinished details in this browser tab, checks duplicate slugs, shows active SEO tools and title variables, and loads the new page. Main Workspace can apply a design to the draft and publish it after review.</span></li><li class="history-more-item"><details class="history-more"><summary><span class="history-more-label">Read more (1)</span><span class="history-less-label">Show less</span><span class="history-chevron" aria-hidden="true">⌄</span></summary><ul><li><span class="history-item-number">4.</span><span>Use one public website URL in prompts or Website Planner instructions as static design guidance across all workspaces. Main and Content to Pages remain limited to registered Bricks controls; HTML and CSS stays static and follows its existing safety checks. No website scripts, source code, text, or remote assets are copied into the generated design.</span></li></ul></details></li></ul></td></tr>
           <tr><td class="history-type-cell"><span class="history-type"><i class="history-dot is-fix" aria-hidden="true"></i>Fixes</span></td><td><ul class="history-updates"><li><span class="history-item-number">1.</span><span>Cancel discards unsaved Page SEO edits and restores the Website Planner to its state when opened, including its copy file and extracted text. Closing with X or Escape still keeps unfinished inputs.</span></li><li><span class="history-item-number">2.</span><span>Prevent saving a new slug already used by another page in Page SEO. Content to Pages can still generate drafts from uploaded copy, but publishing in either workspace pauses until a conflicting page slug is changed.</span></li></ul></td></tr>
@@ -366,7 +375,7 @@
         <details class="card"><summary>Can Content to Pages make a full website?</summary><p>It can create WordPress draft pages from your final copy and prepare a separate Bricks design for each page. Review and apply each proposal, then publish pages separately. It does not create templates or set template conditions. Its Page SEO editor can review supported metadata for selected pages, and labeled SEO details can be saved with new drafts when one supported tool is active.</p></details>
         <details class="card"><summary>Should I upload DOCX or PDF copy?</summary><p>Use DOCX when bold, italic, or links matter. Text-based PDFs can supply readable copy, but their formatting and links are not retained; image-only scans may not extract correctly. The extracted-copy preview is plain text for both.</p></details>
         <details class="card"><summary>Does the assistant edit blog posts?</summary><p>No. It edits eligible WordPress pages and Bricks templates, and Content to Pages creates draft pages. It can configure supported Query Loops to display existing posts, but does not edit or create blog posts.</p></details>
-        <details class="card"><summary>Can I use images from my Media Library?</summary><p>Yes. Choose up to five existing site images, then describe where you want them placed. Their metadata goes to the selected provider, but the selected image files do not. The plugin can propose labeled native placeholders for missing visuals.</p></details>
+        <details class="card"><summary>Can I use images from my Media Library?</summary><p>Yes. Choose up to ten existing site images, then describe where you want them placed. Their metadata goes to the selected provider, but the selected image files do not. The plugin can propose labeled native placeholders for missing visuals.</p></details>
         <details class="card"><summary>Can I match another page's design?</summary><p>Yes. Select the page you want to change and name one other editable page in your prompt. The assistant receives a compact summary of that page's native Bricks layout and visual settings. It does not change the reference page or copy its words and images.</p></details>
         <details class="card"><summary>Does the HTML &amp; CSS Workspace change my page?</summary><p>No. It generates and refines a draft independently of the selected page. Preview it in the isolated browser frame, then copy the HTML and CSS into Bricks yourself. Review the resulting classes, styles, and images in Bricks before saving.</p></details>
         <details class="card"><summary>Where are HTML and CSS chats kept?</summary><p>Up to five chats stay in the current browser tab's session storage until the tab or chat is closed. The plugin does not save those chats to WordPress.</p></details>
