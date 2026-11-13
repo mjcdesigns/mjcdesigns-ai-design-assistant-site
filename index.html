@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17151c">
-  <meta name="description" content="MJC Designs AI Design Assistant for Bricks Builder 1.1.12 includes five plugin interface color themes and optional Page SEO editing for selected WordPress pages, with initial Yoast SEO and AIOSEO support alongside reviewed Bricks designs.">
+  <meta name="description" content="MJC Designs AI 1.1.13 helps build and review Bricks designs. Content to Pages recognizes more page, heading, and SEO formats before creating drafts.">
   <title>MJC Designs AI Design Assistant for Bricks Builder</title>
   <link rel="icon" type="image/svg+xml" href="assets/brand-icon.svg">
   <link rel="stylesheet" href="assets/styles.css?v=1.1.12-layout">
@@ -33,7 +33,7 @@
         <h1>Design with<br><em>a little help.</em></h1>
         <p class="hero-intro">Shape a Bricks page, explore an HTML &amp; CSS concept, or turn final copy into draft pages. Choose from five interface color themes for your workspace.</p>
         <div class="hero-actions"><a class="button button-primary" href="https://wordpress.org/plugins/mjcdesigns-ai-design-assistant-bricks/" target="_blank" rel="noopener noreferrer">Get the free plugin <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="#workspaces">See the workspaces <span aria-hidden="true">↓</span></a></div>
-        <div class="hero-meta"><span class="version-pill">VERSION 1.1.12 · ALPHA</span><span>Free &amp; open source</span></div>
+        <div class="hero-meta"><span class="version-pill">VERSION 1.1.13 · ALPHA</span><span>Free &amp; open source</span></div>
       </div>
       <div class="hero-icon" aria-hidden="true"><div class="hero-halo"></div><picture><source media="(prefers-reduced-motion: reduce)" srcset="assets/brand-icon.svg"><img src="assets/mjc-designs-ai-icon-animated.gif" alt="" width="260" height="260"></picture><span>✦</span></div>
     </section>
@@ -80,6 +80,7 @@
           <a href="#content-to-pages">Explore the workflow <span aria-hidden="true">↓</span></a>
         </article>
       </div>
+      <div class="release-note"><strong>Improved in 1.1.13</strong><span>Content to Pages recognizes more page markers, SEO labels, and heading formats, and shows the detected structure before creating drafts.</span></div>
       <div class="release-note"><strong>Added in 1.1.9</strong><span>Page SEO adds optional editing for supported Yoast SEO and AIOSEO page details. Content to Pages can carry clearly labeled SEO details from uploaded copy into newly created drafts when one supported SEO tool is active.</span></div>
     </section>
 
@@ -115,9 +116,9 @@
     </section>
     <section class="wrap section-block" id="content-to-pages">
       <div class="section-title"><div><p class="kicker">INTRODUCED IN VERSION 1.1.7</p><h2>From final copy to draft pages.</h2><p>Content to Pages keeps page creation and design review in separate steps.</p></div><span>05 / 10</span></div>
-      <div class="content-lead card"><div><span class="workspace-tag">CONTENT TO PAGES WORKSPACE</span><h3>Bring the words. Shape the pages.</h3><p>Preview the extracted copy, add brand colors and instructions, then create WordPress drafts. Clearly labeled SEO details can follow new drafts when one supported SEO tool is active. Generate and refine a Bricks design for each page when you are ready.</p></div><div class="content-lead-aside"><strong>Draft first</strong><span>Pages remain drafts after design changes. Publishing requires a separate confirmation and permission.</span></div></div>
+      <div class="content-lead card"><div><span class="workspace-tag">CONTENT TO PAGES WORKSPACE</span><h3>Bring the words. Shape the pages.</h3><p>Review the detected page structure and extracted copy, add brand colors and instructions, then create WordPress drafts. Clearly labeled SEO details can follow new drafts when one supported SEO tool is active. Generate and refine a Bricks design for each page when you are ready.</p></div><div class="content-lead-aside"><strong>Draft first</strong><span>Pages remain drafts after design changes. Publishing requires a separate confirmation and permission.</span></div></div>
       <ol class="content-steps">
-        <li class="card"><span>01</span><h3>Prepare your copy</h3><p>Upload a DOCX or text-based PDF with a clear title for each page, such as <code>Page: Home</code>. You can include labeled SEO title, keyphrase, slug, and meta description. Files can be up to 50 MB, subject to your server's upload limit.</p></li>
+        <li class="card"><span>01</span><h3>Prepare your copy</h3><p>Upload a DOCX or text-based PDF. Pages can start with <code>Page: Home</code>, <code>HP - Home</code>, or <code>2P - About</code>; SEO labels and <code>H1:</code> or <code>[H1]</code> headings are also recognized. Review the detected structure before creating drafts. Files can be up to 50 MB, subject to your server's upload limit.</p></li>
         <li class="card"><span>02</span><h3>Set the direction</h3><p>Choose brand colors and add design instructions. Your planner settings stay in this browser tab; the uploaded file must be added again after a reload.</p></li>
         <li class="card"><span>03</span><h3>Create draft pages</h3><p>Generate WordPress drafts from the copy. If a title already exists, the plugin asks before skipping that page. Labeled SEO details can be saved with each new draft when one supported SEO tool is active.</p></li>
         <li class="card"><span>04</span><h3>Review each design</h3><p>Generate or refine a Bricks design for a selected page, inspect the temporary preview and changes, then apply. You can also edit an existing Bricks template.</p></li>
@@ -258,9 +259,12 @@
     <section class="wrap section-block history-section" id="history" aria-labelledby="history-title">
       <div class="section-title"><div><p class="kicker">RELEASE NOTES</p><h2 id="history-title">Version History</h2><p>A compact record of plugin updates.</p></div><span>09 / 10</span></div>
       <div class="history-card card">
-        <div class="history-intro"><div><h3>Release timeline</h3><p>Updates, newest first. Earlier 0.x work is grouped because its exact release dates were not recorded.</p></div><span class="history-current">Current · 1.1.12 (alpha)</span></div>
+        <div class="history-intro"><div><h3>Release timeline</h3><p>Updates, newest first. Earlier 0.x work is grouped because its exact release dates were not recorded.</p></div><span class="history-current">Current · 1.1.13 (alpha)</span></div>
         <div class="history-legend" aria-label="Change types"><span><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span><span><i class="history-dot is-fix" aria-hidden="true"></i>Fixes</span></div>
         <div class="history-table-wrap"><table class="history-table"><thead><tr><th scope="col">Version</th><th scope="col">Released (Asia/Manila · UTC+8)</th><th scope="col">Type</th><th scope="col">Updates</th></tr></thead>
+        <tbody class="history-version-group">
+          <tr><th scope="rowgroup" rowspan="1"><span class="history-version">1.1.13 (alpha)</span></th><td class="history-date" rowspan="1"><time datetime="2026-11-14T05:24:59+08:00"><span>Nov 14, 2026</span><small>5:24:59 AM PHT</small></time></td><td class="history-type-cell"><span class="history-type"><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span></td><td><ul class="history-updates"><li><span class="history-item-number">1.</span><span>Recognize more page markers, SEO labels, and heading formats in Content to Pages copy, and show the detected structure before creating drafts.</span></li><li><span class="history-item-number">2.</span><span>Clarify the Plugins screen description and refine WordPress.org tags.</span></li></ul></td></tr>
+        </tbody>
         <tbody class="history-version-group">
           <tr><th scope="rowgroup" rowspan="1"><span class="history-version">1.1.12 (alpha)</span></th><td class="history-date" rowspan="1"><time datetime="2026-11-05T02:21:03+08:00"><span>Nov 5, 2026</span><small>2:21:03 AM PHT</small></time></td><td class="history-type-cell"><span class="history-type"><i class="history-dot is-change" aria-hidden="true"></i>Improvements</span></td><td><ul class="history-updates"><li><span class="history-item-number">1.</span><span>Improved internal code organization and tightened safeguards to make the plugin easier to maintain.</span></li><li><span class="history-item-number">2.</span><span>Increased the maximum number of selectable site images from five to ten.</span></li></ul></td></tr>
         </tbody>
