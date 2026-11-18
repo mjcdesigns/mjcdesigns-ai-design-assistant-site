@@ -54,6 +54,8 @@ button { font:inherit; }
 
 .overview-grid { display:grid; grid-template-columns:1.12fr .88fr; gap:16px; margin-top:100px; }
 .card { background:#18181d; border:0; border-radius:14px; box-shadow:none; }
+.workspace-grid .card,.capability-grid .card,.review-grid .card,.content-steps .card { transition:box-shadow .3s ease 0s; }
+.workspace-grid .card:hover,.capability-grid .card:hover,.review-grid .card:hover,.content-steps .card:hover { box-shadow:0 0 0 2px #c9baff; }
 .about-card,.about-side { padding:27px 29px; }
 .card-head { display:flex; align-items:flex-start; gap:13px; }
 .card-icon { flex:0 0 auto; display:grid; place-items:center; width:35px; height:35px; border-radius:10px; background:#2b233b; color:#c9baff; font-size:17px; }
