@@ -409,3 +409,10 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .alpha-notice-copy p { margin:0; }
 .alpha-notice-copy a { color:#d8c4ff; font-weight:750; text-decoration:underline; text-underline-offset:2px; }
 .alpha-notice-copy a:hover,.alpha-notice-copy a:focus-visible { color:#fff; }
+
+
+/* v1.1.15 reusable design tools section. */
+.design-tool-block + .design-tool-block { margin-top:54px; padding-top:42px; border-top:1px solid #393342; }
+.design-tool-block > .section-title h3 { margin:0; font-size:clamp(24px,2.7vw,32px); line-height:1.2; letter-spacing:-.04em; }
+.template-feature-grid { margin-top:14px; }
+@media (max-width:620px) { .design-tool-block + .design-tool-block { margin-top:38px; padding-top:30px; } }
