@@ -141,7 +141,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .alternate-start { margin:14px 0 0; padding:16px 20px; border:1px solid transparent; border-radius:11px; background:#211b2d; color:#cbc2d7; font-size:12px; line-height:1.7; }
 .alternate-start strong { color:#e5d9f7; }
 .tutorial-group { display:flex; flex-direction:column; gap:14px; }
-.tutorials { display:flex; align-items:center; gap:22px; padding:0 28px; border-radius:14px; background:linear-gradient(110deg,#211b2c,#2d2240); }
+.tutorials { display:flex; align-items:center; gap:22px; padding:25px 28px; border-radius:14px; background:linear-gradient(110deg,#211b2c,#2d2240); }
 .tutorials-icon { flex:0 0 52px; width:52px; height:52px; display:grid; place-items:center; padding-left:3px; border-radius:14px; background:#5f41b0; color:white; font-size:20px; }
 .tutorials h2 { margin:0; font-size:21px; letter-spacing:-.03em; }
 .tutorials p:not(.kicker) { margin:5px 0 0; max-width:570px; color:#c9c1d3; font-size:12px; }
@@ -207,7 +207,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .faq-list summary:after { content:"+"; position:absolute; right:0; top:13px; color:#c9baff; font-size:22px; font-weight:400; }
 .faq-list details[open] summary:after { content:"−"; }
 .faq-list details p { margin:0; padding:0 30px 18px 0; color:var(--text); font-size:12px; line-height:1.75; }
-.closing { margin-bottom:80px; padding:0 38px; border-radius:16px; display:flex; align-items:center; justify-content:space-between; gap:25px; background:linear-gradient(110deg,#211a2c,#5f41b0); color:white; }
+.closing { margin-bottom:80px; padding:32px 38px; border-radius:16px; display:flex; align-items:center; justify-content:space-between; gap:25px; background:linear-gradient(110deg,#211a2c,#5f41b0); color:white; }
 .closing .kicker { color:#c9baff; }
 .closing h2 { margin:0; font-size:28px; letter-spacing:-.04em; }
 .closing p:not(.kicker) { margin:7px 0 0; max-width:490px; font-size:12px; color:#dfd9eb; }
@@ -284,7 +284,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
   .content-lead-aside { padding:16px 0 0; border-left:0; border-top:1px solid #604a82; }
   .content-steps,.style-feature-grid { grid-template-columns:1fr; }
   .steps-card { grid-template-columns:1fr; gap:26px; padding:20px; }
-  .tutorials { align-items:flex-start; padding:0 22px; gap:15px; }
+  .tutorials { align-items:flex-start; padding:22px; gap:15px; }
   .tutorials-icon { width:42px; height:42px; flex-basis:42px; }
   .tutorials > div:nth-child(2) { flex:1 1 calc(100% - 60px); }
   .tutorials h2 { font-size:18px; }
@@ -301,7 +301,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
   .capability-grid,.review-grid { grid-template-columns:1fr; }
   .capability { min-height:0; }
   .limitations { grid-template-columns:1fr; gap:7px; }
-  .closing { margin-bottom:80px; padding:0 27px; align-items:flex-start; flex-direction:column; }
+  .closing { margin-bottom:80px; padding:27px; align-items:flex-start; flex-direction:column; }
   .closing h2 { font-size:24px; }
   .footer-inner,.footer-bottom { flex-direction:column; }
   .footer-links { gap:18px; }

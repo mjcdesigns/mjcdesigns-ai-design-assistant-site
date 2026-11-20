@@ -8,6 +8,10 @@ navDropdowns.forEach((dropdown) => {
   });
 });
 
+document.addEventListener('click', (event) => {
+  if (!navigation?.contains(event.target)) navDropdowns.forEach((dropdown) => { dropdown.open = false; });
+});
+
 menuButton?.addEventListener('click', () => {
   const expanded = menuButton.getAttribute('aria-expanded') === 'true';
   menuButton.setAttribute('aria-expanded', String(!expanded));
