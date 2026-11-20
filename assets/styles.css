@@ -21,11 +21,11 @@ button { font:inherit; }
 .brand strong { font-size:15px; letter-spacing:-.02em; }
 .brand-ai { color:#bdb4ce; }
 .brand small { margin-top:4px; color:#fff; font-size:8px; font-weight:700; letter-spacing:.1em; }
-.primary-nav { display:flex; align-items:center; gap:18px; font-size:11px; font-weight:600; }
+.primary-nav { display:flex; align-items:center; gap:28px; font-size:11px; font-weight:600; }
 .nav-dropdown { position:relative; }
 .nav-dropdown summary { display:flex; align-items:center; gap:7px; color:#d8d2e2; cursor:pointer; list-style:none; white-space:nowrap; }
 .nav-dropdown summary::-webkit-details-marker { display:none; }
-.nav-dropdown summary::after { content:"⌄"; color:#a99bbd; font-size:13px; transition:transform .2s ease; }
+.nav-dropdown summary::after { width:0; height:0; border-left:4px solid transparent; border-right:4px solid transparent; border-top:5px solid #a99bbd; transition:transform .2s ease; }
 .nav-dropdown[open] summary::after { transform:rotate(180deg); }
 .nav-dropdown summary:hover,.nav-dropdown[open] summary { color:#fff; }
 .nav-dropdown-menu { position:absolute; top:calc(100% + 14px); left:-14px; z-index:30; display:grid; gap:2px; min-width:190px; padding:8px; border-radius:11px; background:#211b2a; box-shadow:0 16px 34px #09070d99; }
@@ -362,7 +362,7 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 .history-more[open] { display:flex; flex-direction:column-reverse; align-items:flex-start; gap:9px; }
 .history-more[open] .history-chevron { transform:rotate(180deg); }
 .history-more li + li { margin-top:8px; }
-.history-alpha th,.history-alpha td { background:#362849; }
+.history-alpha th,.history-alpha td { background:transparent; }
 .history-alpha .history-version,.history-alpha .history-type { background:#5a4375; color:#fff; border-color:#8b70b7; }
 .history-pagination { display:flex; align-items:center; justify-content:space-between; gap:14px; padding:14px 18px; border-top:1px solid #393342; }
 .history-pagination[hidden] { display:none; }
@@ -424,7 +424,11 @@ code { border-radius:4px; background:#292438; color:#dbcaff; padding:2px 4px; fo
 
 
 /* v1.1.15 reusable design tools section. */
-.design-tool-block + .design-tool-block { margin-top:44px; padding-top:34px; border-top:1px solid #393342; }
+.design-tool-block + .design-tool-block { margin-top:56px; padding-top:0; border-top:0; }
 .design-tool-block > .section-title h3 { margin:0; font-size:clamp(24px,2.7vw,32px); line-height:1.2; letter-spacing:-.04em; }
 .template-feature-grid { margin-top:14px; }
-@media (max-width:620px) { .design-tool-block + .design-tool-block { margin-top:32px; padding-top:24px; } }
+@media (max-width:620px) { .design-tool-block + .design-tool-block { margin-top:40px; padding-top:0; } }
+
+.integrated-capabilities { margin-top:60px; }
+.integrated-capabilities > .section-title h2 { margin:0; font-size:clamp(28px,3.2vw,39px); line-height:1.15; letter-spacing:-.045em; }
+@media (max-width:800px) { .integrated-capabilities { margin-top:42px; } }
