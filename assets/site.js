@@ -1,5 +1,12 @@
 const menuButton = document.querySelector('.menu-toggle');
 const navigation = document.querySelector('#primary-nav');
+const navDropdowns = [...(navigation?.querySelectorAll('.nav-dropdown') ?? [])];
+
+navDropdowns.forEach((dropdown) => {
+  dropdown.addEventListener('toggle', () => {
+    if (dropdown.open) navDropdowns.filter((other) => other !== dropdown).forEach((other) => { other.open = false; });
+  });
+});
 
 menuButton?.addEventListener('click', () => {
   const expanded = menuButton.getAttribute('aria-expanded') === 'true';
@@ -13,6 +20,7 @@ navigation?.querySelectorAll('a').forEach((link) => {
     menuButton?.setAttribute('aria-expanded', 'false');
     menuButton?.setAttribute('aria-label', 'Open navigation');
     navigation.classList.remove('is-open');
+    navDropdowns.forEach((dropdown) => { dropdown.open = false; });
   });
 });
 
